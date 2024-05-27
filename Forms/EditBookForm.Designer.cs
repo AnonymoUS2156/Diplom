@@ -36,16 +36,17 @@
             System.Windows.Forms.Label yearLabel1;
             System.Windows.Forms.Label Заголовок;
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBoxISBN = new System.Windows.Forms.MaskedTextBox();
+            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBoxPublisher = new System.Windows.Forms.TextBox();
             this.disciplinesComboBox = new System.Windows.Forms.ComboBox();
-            this.textBoxAuthor = new System.Windows.Forms.TextBox();
             this.textBoxYear = new System.Windows.Forms.MaskedTextBox();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
             this.textBoxName = new System.Windows.Forms.TextBox();
+            this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.comboBoxAuthors = new System.Windows.Forms.ComboBox();
             iSBNLabel = new System.Windows.Forms.Label();
             nameLabel1 = new System.Windows.Forms.Label();
             disciplinesLabel1 = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@
             Заголовок = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // iSBNLabel
@@ -116,12 +118,9 @@
             this.pictureBox1.Location = new System.Drawing.Point(15, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(161, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataSource = typeof(Diploma.Book);
             // 
             // textBoxISBN
             // 
@@ -129,8 +128,12 @@
             this.textBoxISBN.Location = new System.Drawing.Point(58, 177);
             this.textBoxISBN.Mask = "0000000000000";
             this.textBoxISBN.Name = "textBoxISBN";
-            this.textBoxISBN.Size = new System.Drawing.Size(87, 20);
+            this.textBoxISBN.Size = new System.Drawing.Size(84, 20);
             this.textBoxISBN.TabIndex = 5;
+            // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataSource = typeof(Diploma.Book);
             // 
             // textBoxPublisher
             // 
@@ -144,19 +147,12 @@
             // disciplinesComboBox
             // 
             this.disciplinesComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "Disciplines", true));
+            this.disciplinesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.disciplinesComboBox.FormattingEnabled = true;
-            this.disciplinesComboBox.Location = new System.Drawing.Point(328, 116);
+            this.disciplinesComboBox.Location = new System.Drawing.Point(327, 116);
             this.disciplinesComboBox.Name = "disciplinesComboBox";
             this.disciplinesComboBox.Size = new System.Drawing.Size(139, 21);
             this.disciplinesComboBox.TabIndex = 10;
-            // 
-            // textBoxAuthor
-            // 
-            this.textBoxAuthor.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "Author.Name", true));
-            this.textBoxAuthor.Location = new System.Drawing.Point(327, 159);
-            this.textBoxAuthor.Name = "textBoxAuthor";
-            this.textBoxAuthor.Size = new System.Drawing.Size(140, 20);
-            this.textBoxAuthor.TabIndex = 11;
             // 
             // textBoxYear
             // 
@@ -176,24 +172,15 @@
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonEdit
             // 
-            this.button2.Location = new System.Drawing.Point(340, 305);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 41);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Провести изменение";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.Location = new System.Drawing.Point(340, 245);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(141, 41);
-            this.buttonDelete.TabIndex = 16;
-            this.buttonDelete.Text = "Удалить";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            this.buttonEdit.Location = new System.Drawing.Point(181, 305);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(141, 41);
+            this.buttonEdit.TabIndex = 16;
+            this.buttonEdit.Text = "Провести изменение";
+            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // textBoxName
             // 
@@ -203,18 +190,41 @@
             this.textBoxName.Size = new System.Drawing.Size(140, 20);
             this.textBoxName.TabIndex = 3;
             // 
+            // modelBindingSource
+            // 
+            this.modelBindingSource.DataSource = typeof(Diploma.Model);
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(340, 260);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(141, 41);
+            this.buttonDelete.TabIndex = 16;
+            this.buttonDelete.Text = "Удалить";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // comboBoxAuthors
+            // 
+            this.comboBoxAuthors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxAuthors.FormattingEnabled = true;
+            this.comboBoxAuthors.Location = new System.Drawing.Point(326, 159);
+            this.comboBoxAuthors.Name = "comboBoxAuthors";
+            this.comboBoxAuthors.Size = new System.Drawing.Size(139, 21);
+            this.comboBoxAuthors.TabIndex = 17;
+            // 
             // EditBookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 358);
+            this.ClientSize = new System.Drawing.Size(509, 369);
+            this.Controls.Add(this.comboBoxAuthors);
             this.Controls.Add(this.buttonDelete);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(yearLabel1);
             this.Controls.Add(this.textBoxYear);
             this.Controls.Add(nameLabel);
-            this.Controls.Add(this.textBoxAuthor);
             this.Controls.Add(disciplinesLabel1);
             this.Controls.Add(this.disciplinesComboBox);
             this.Controls.Add(nameLabel1);
@@ -225,10 +235,11 @@
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.pictureBox1);
             this.Name = "EditBookForm";
-            this.Text = "EditBookForm";
+            this.Text = "Редактирование книги";
             this.Load += new System.EventHandler(this.EditBookForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,11 +252,12 @@
         private System.Windows.Forms.MaskedTextBox textBoxISBN;
         private System.Windows.Forms.TextBox textBoxPublisher;
         private System.Windows.Forms.ComboBox disciplinesComboBox;
-        private System.Windows.Forms.TextBox textBoxAuthor;
         private System.Windows.Forms.MaskedTextBox textBoxYear;
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.BindingSource modelBindingSource;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.ComboBox comboBoxAuthors;
     }
 }

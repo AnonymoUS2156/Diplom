@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Diploma.Forms
 {
-    public partial class ReadersForm : Form
+    public partial class AddDisciplineForm : Form
     {
-        public ReadersForm()
+        public AddDisciplineForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

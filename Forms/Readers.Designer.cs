@@ -43,9 +43,11 @@
             System.Windows.Forms.Label reservedBookIDLabel;
             System.Windows.Forms.Label labelReservedBookName;
             System.Windows.Forms.Label isReservedLabel;
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.isReservedCheckBox = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             secondNameLabel = new System.Windows.Forms.Label();
             surnameLabel = new System.Windows.Forms.Label();
@@ -108,10 +110,6 @@
             phoneLabel1.TabIndex = 12;
             phoneLabel1.Text = "Телефон";
             // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataSource = typeof(Diploma.Employee);
-            // 
             // labelName
             // 
             labelName.AutoSize = true;
@@ -147,6 +145,7 @@
             labelEmail.Size = new System.Drawing.Size(35, 13);
             labelEmail.TabIndex = 17;
             labelEmail.Text = "Email:";
+            labelEmail.Click += new System.EventHandler(this.labelEmail_Click);
             // 
             // label6
             // 
@@ -211,10 +210,34 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "labelSurname";
             // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(Diploma.Employee);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(602, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(626, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "label3";
+            // 
             // Readers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(isReservedLabel);
             this.Controls.Add(this.isReservedCheckBox);
@@ -244,5 +267,7 @@
         private System.Windows.Forms.BindingSource employeeBindingSource;
         private System.Windows.Forms.CheckBox isReservedCheckBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

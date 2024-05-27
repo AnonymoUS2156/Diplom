@@ -61,6 +61,12 @@
     <Compile Include="Forms\AddBookForm.Designer.cs">
       <DependentUpon>AddBookForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddDisciplineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddDisciplineForm.Designer.cs">
+      <DependentUpon>AddDisciplineForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddEmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="Models\Publisher.cs" />
     <EmbeddedResource Include="Forms\AddBookForm.resx">
       <DependentUpon>AddBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddDisciplineForm.resx">
+      <DependentUpon>AddDisciplineForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddEmployeeForm.resx">
       <DependentUpon>AddEmployeeForm.cs</DependentUpon>

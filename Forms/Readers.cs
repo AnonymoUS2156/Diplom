@@ -20,13 +20,18 @@ namespace Diploma.Forms
 
         public void Fill(Employee employee)
         {
-            // не находит текст в User Control
+            //пересоздать лейблы
         }
 
         private void buttonProps_Click(object sender, EventArgs e)
         {
             AddEmployeeForm addemployeeForm = new AddEmployeeForm();
             addemployeeForm.ShowDialog();
+        }
+
+        private void labelEmail_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -19,6 +19,7 @@ namespace Diploma
         }
         public static Model model = new Model();
         List<Book> books = model.Book.ToList();
+
         private void Load1()
         {
             flowLayoutPanel1.Controls.Clear();
@@ -30,12 +31,12 @@ namespace Diploma
                 flowLayoutPanel1.Controls.Add(bookProperties);
             }
         }
-        
+
         private void MainForm_Load(object sender, EventArgs e)
         {
             comboBoxSort.DataSource = GetProp(new Book());
             comboBoxSort.SelectedIndex = 0;
-            //comboBoxAtributesSort.SelectedIndex = 0;
+            comboBoxAtributesSort.SelectedIndex = 0;
             Load1();
         }
         private List<string> GetProp<T>(T o)
@@ -66,28 +67,39 @@ namespace Diploma
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
         {
 
-            if (!string.IsNullOrEmpty(textBoxSearch.Text)) 
+            if (!string.IsNullOrEmpty(textBoxSearch.Text)) // хз можно сделать лучше
             {
                 books = books.Where(p => p.GetType().GetProperties().Any(prop =>
-        prop.GetValue(p)?.ToString()?.Contains(textBoxSearch.Text) ?? false)).OrderByDescending(p => p.GetType().GetProperties()
-        .First(prop => prop.GetValue(p)?.ToString()?.Contains(textBoxSearch.Text) ?? false)
-        .GetValue(p)).ToList();
-                
+                prop.GetValue(p)?.ToString()?.ToLower().Contains(textBoxSearch.Text.ToLower()) ?? false)).OrderByDescending(p => p.GetType().GetProperties()
+                .First(prop => prop.GetValue(p)?.ToString()?.ToLower().Contains(textBoxSearch.Text.ToLower()) ?? false)
+                .GetValue(p)).ToList();
+            }
+            else
+            {
+                books = model.Book.ToList();
             }
             Load1();
-            
+
             // добавить откат поискового запроса при отсутствии символов в поисковой строке
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            ReadersForm readersForm = new ReadersForm();
+            readersForm.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            EditBookForm editBookForm = new EditBookForm();
-            editBookForm.ShowDialog();
+            AddBookForm addBookForm = new AddBookForm();
+            addBookForm.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddDisciplineForm addDisciplineForm = new AddDisciplineForm();
+            addDisciplineForm.ShowDialog();
         }
     }
 }

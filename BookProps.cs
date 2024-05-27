@@ -13,12 +13,14 @@ namespace Diploma
 {
     public partial class BookProps : UserControl
     {
+        private Book _book;
         public BookProps()
         {
             InitializeComponent();
         }
         public void Fill(Book book)
         {
+            _book = book;
             labelBookName.Text = book.Name;
             labelAuthor.Text = book.Author.Abbreviation.ToString();
             labelPublisher.Text = book.Publisher.Name.ToString();
@@ -26,12 +28,11 @@ namespace Diploma
             labelDiscipline.Text = book.Disciplines.ToString();
             labelAuthorScypher.Text = book.Author_Sign.ToString();
             pictureBox1.Image = Image.FromFile($@"{book.Photo}");
-            Book book1 = new Book();
         }
 
         private void buttonProps_Click(object sender, EventArgs e)
         {
-            EditBookForm editBookForm = new EditBookForm();
+            EditBookForm editBookForm = new EditBookForm(_book);
             editBookForm.ShowDialog();
         }
     }

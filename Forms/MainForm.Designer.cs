@@ -51,6 +51,16 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button4
+            // 
+            button4.Location = new System.Drawing.Point(591, 62);
+            button4.Name = "button4";
+            button4.Size = new System.Drawing.Size(94, 35);
+            button4.TabIndex = 1;
+            button4.Text = "Добавить издательство";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += new System.EventHandler(this.button1_Click);
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -110,16 +120,6 @@
             this.button3.Text = "Добавить автора";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
-            // 
-            button4.Location = new System.Drawing.Point(591, 62);
-            button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(94, 35);
-            button4.TabIndex = 1;
-            button4.Text = "Добавить издательство";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(694, 62);
@@ -128,6 +128,7 @@
             this.button5.TabIndex = 1;
             this.button5.Text = "Добавить предмет";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // MainForm
             // 
