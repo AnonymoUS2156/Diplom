@@ -34,8 +34,8 @@
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.disciplinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.maskedTextBoxClass = new System.Windows.Forms.MaskedTextBox();
+            this.disciplinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             classLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.disciplinesBindingSource)).BeginInit();
@@ -86,10 +86,6 @@
             this.button2.Text = "Назад";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // disciplinesBindingSource
-            // 
-            this.disciplinesBindingSource.DataSource = typeof(Diploma.Disciplines);
-            // 
             // maskedTextBoxClass
             // 
             this.maskedTextBoxClass.Location = new System.Drawing.Point(56, 16);
@@ -97,6 +93,10 @@
             this.maskedTextBoxClass.Name = "maskedTextBoxClass";
             this.maskedTextBoxClass.Size = new System.Drawing.Size(22, 20);
             this.maskedTextBoxClass.TabIndex = 6;
+            // 
+            // disciplinesBindingSource
+            // 
+            this.disciplinesBindingSource.DataSource = typeof(Diploma.Disciplines);
             // 
             // AddDisciplineForm
             // 

@@ -120,13 +120,12 @@ namespace Diploma
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
 
-            AddBookForm addBookForm = new AddBookForm();
-            addBookForm.ShowDialog();
         }
 
         private void materialRaisedButton4_Click(object sender, EventArgs e)
         {
-
+            AddAuthorForm addAuthorForm = new AddAuthorForm();
+            addAuthorForm.ShowDialog(this);
         }
     }
 }

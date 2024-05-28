@@ -36,14 +36,14 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 70);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(678, 190);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(678, 159);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(689, 12);
+            this.button1.Location = new System.Drawing.Point(689, 70);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 32);
             this.button1.TabIndex = 2;
@@ -53,7 +53,7 @@
             // 
             // buttonAddReader
             // 
-            this.buttonAddReader.Location = new System.Drawing.Point(689, 159);
+            this.buttonAddReader.Location = new System.Drawing.Point(689, 195);
             this.buttonAddReader.Name = "buttonAddReader";
             this.buttonAddReader.Size = new System.Drawing.Size(99, 34);
             this.buttonAddReader.TabIndex = 3;
@@ -64,12 +64,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 214);
+            this.ClientSize = new System.Drawing.Size(800, 241);
             this.Controls.Add(this.buttonAddReader);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "ReadersForm";
-            this.Text = "ReadersForm";
+            this.Text = "Список читателей";
             this.Load += new System.EventHandler(this.ReadersForm_Load);
             this.ResumeLayout(false);
 

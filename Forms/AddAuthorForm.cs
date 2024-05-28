@@ -1,4 +1,5 @@
 ﻿using MaterialSkin;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,37 +9,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MaterialSkin.Controls;
-namespace Diploma
+
+namespace Diploma.Forms
 {
-    public partial class AddBookForm : MaterialForm
+    public partial class AddAuthorForm : MaterialForm
     {
-        public AddBookForm()
+        public AddAuthorForm()
         {
             InitializeComponent();
+
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue400, Accent.LightBlue100, TextShade.WHITE);
-        }
-
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void buttonDelete_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonEdit_Click(object sender, EventArgs e)
-        {
 
         }
     }

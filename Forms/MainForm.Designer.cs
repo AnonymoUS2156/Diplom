@@ -42,9 +42,9 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 77);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 77);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(581, 361);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(570, 361);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // textBoxSearch
