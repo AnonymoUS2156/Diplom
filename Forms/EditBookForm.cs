@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MaterialSkin;
+using MaterialSkin.Controls;
 namespace Diploma.Forms
 {
-    public partial class EditBookForm : Form
+    public partial class EditBookForm : MaterialForm
     {
         private Model model = MainForm.model;
         private Book thisbook;
@@ -21,6 +22,11 @@ namespace Diploma.Forms
         public EditBookForm(Book book)
         {
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue400, Accent.LightBlue100, TextShade.WHITE);
             LoadComboBox();
             Fill(book);
         }
@@ -42,8 +48,6 @@ namespace Diploma.Forms
         private void Fill(Book book)
         {
             thisbook = book;
-            //не работает выгрузка данных книги
-            //
             textBoxName.Text = book.Name;
             textBoxPublisher.Text = book.Publisher.Name;
             textBoxISBN.Text = book.ISBN.ToString();
@@ -70,7 +74,15 @@ namespace Diploma.Forms
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             model.Book.Remove(thisbook);
+            try
+            {
             model.SaveChanges();
+
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)

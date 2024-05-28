@@ -17,10 +17,28 @@ namespace Diploma.Forms
         {
             InitializeComponent();
         }
+        private Employee employee1 = new Employee();
 
+        private Model model = MainForm.model;
         public void Fill(Employee employee)
         {
-            //пересоздать лейблы
+            employee1 = employee;
+            labelSurname.Text = employee.Surname;
+            labelName.Text = employee.Name;
+            labelSecondName.Text = employee.SecondName;
+            labelDepartment.Text = employee.Department1.Name.ToString();
+            labelPhone.Text = employee.Phone;
+            labelEmail.Text = employee.Email;
+            checkBoxReserved.Checked = (bool)employee.IsReserved;
+            if (employee.IsReserved == true)
+            {
+                labelBookName.Text = employee.Book.Name;
+            }
+            else
+            {
+                labelBookName.Visible = false;
+                labelnasas.Visible = false;
+            }
         }
 
         private void buttonProps_Click(object sender, EventArgs e)
@@ -29,9 +47,9 @@ namespace Diploma.Forms
             addemployeeForm.ShowDialog();
         }
 
-        private void labelEmail_Click(object sender, EventArgs e)
-        {
+        
+      
 
-        }
+      
     }
 }

@@ -28,34 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonEnter = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonEnter
             // 
-            this.button1.Location = new System.Drawing.Point(282, 273);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(286, 92);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "buttonEnter";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonEnter.Depth = 0;
+            this.buttonEnter.Location = new System.Drawing.Point(318, 306);
+            this.buttonEnter.MouseState = MaterialSkin.MouseState.HOVER;
+            this.buttonEnter.Name = "buttonEnter";
+            this.buttonEnter.Primary = true;
+            this.buttonEnter.Size = new System.Drawing.Size(177, 62);
+            this.buttonEnter.TabIndex = 1;
+            this.buttonEnter.Text = "Войти";
+            this.buttonEnter.UseVisualStyleBackColor = true;
+            this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Diploma.Properties.Resources.w0n7cislc3lpalnnhz6yo1qgq1baqbr3;
+            this.pictureBox1.Location = new System.Drawing.Point(258, 67);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(298, 217);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // AuthForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.buttonEnter);
             this.Name = "AuthForm";
-            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private MaterialSkin.Controls.MaterialRaisedButton buttonEnter;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

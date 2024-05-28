@@ -26,12 +26,15 @@ namespace Diploma
             labelPublisher.Text = book.Publisher.Name.ToString();
             labelISBN.Text = book.ISBN.ToString();
             labelDiscipline.Text = book.Disciplines.ToString();
-            labelAuthorScypher.Text = book.Author_Sign.ToString();
+            labelAuthor.Text = book.Author_Sign.ToString();
             pictureBox1.Image = Image.FromFile($@"{book.Photo}");
         }
 
-        private void buttonProps_Click(object sender, EventArgs e)
+        
+
+        private void buttonProps_Click_1(object sender, EventArgs e)
         {
+
             EditBookForm editBookForm = new EditBookForm(_book);
             editBookForm.ShowDialog();
         }

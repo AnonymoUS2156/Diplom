@@ -61,7 +61,7 @@
             // iSBNLabel
             // 
             iSBNLabel.AutoSize = true;
-            iSBNLabel.Location = new System.Drawing.Point(12, 180);
+            iSBNLabel.Location = new System.Drawing.Point(26, 222);
             iSBNLabel.Name = "iSBNLabel";
             iSBNLabel.Size = new System.Drawing.Size(35, 13);
             iSBNLabel.TabIndex = 4;
@@ -70,7 +70,7 @@
             // nameLabel1
             // 
             nameLabel1.AutoSize = true;
-            nameLabel1.Location = new System.Drawing.Point(266, 73);
+            nameLabel1.Location = new System.Drawing.Point(269, 128);
             nameLabel1.Name = "nameLabel1";
             nameLabel1.Size = new System.Drawing.Size(56, 13);
             nameLabel1.TabIndex = 6;
@@ -79,7 +79,7 @@
             // disciplinesLabel1
             // 
             disciplinesLabel1.AutoSize = true;
-            disciplinesLabel1.Location = new System.Drawing.Point(262, 119);
+            disciplinesLabel1.Location = new System.Drawing.Point(265, 174);
             disciplinesLabel1.Name = "disciplinesLabel1";
             disciplinesLabel1.Size = new System.Drawing.Size(60, 13);
             disciplinesLabel1.TabIndex = 9;
@@ -88,7 +88,7 @@
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(283, 162);
+            nameLabel.Location = new System.Drawing.Point(286, 217);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(37, 13);
             nameLabel.TabIndex = 10;
@@ -97,7 +97,7 @@
             // yearLabel1
             // 
             yearLabel1.AutoSize = true;
-            yearLabel1.Location = new System.Drawing.Point(289, 200);
+            yearLabel1.Location = new System.Drawing.Point(292, 255);
             yearLabel1.Name = "yearLabel1";
             yearLabel1.Size = new System.Drawing.Size(32, 13);
             yearLabel1.TabIndex = 14;
@@ -106,7 +106,7 @@
             // Заголовок
             // 
             Заголовок.AutoSize = true;
-            Заголовок.Location = new System.Drawing.Point(260, 31);
+            Заголовок.Location = new System.Drawing.Point(263, 86);
             Заголовок.Name = "Заголовок";
             Заголовок.Size = new System.Drawing.Size(61, 13);
             Заголовок.TabIndex = 2;
@@ -115,7 +115,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 70);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(161, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,7 +125,7 @@
             // textBoxISBN
             // 
             this.textBoxISBN.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "ISBN", true));
-            this.textBoxISBN.Location = new System.Drawing.Point(58, 177);
+            this.textBoxISBN.Location = new System.Drawing.Point(72, 219);
             this.textBoxISBN.Mask = "0000000000000";
             this.textBoxISBN.Name = "textBoxISBN";
             this.textBoxISBN.Size = new System.Drawing.Size(84, 20);
@@ -138,7 +138,7 @@
             // textBoxPublisher
             // 
             this.textBoxPublisher.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "Publisher.Name", true));
-            this.textBoxPublisher.Location = new System.Drawing.Point(327, 70);
+            this.textBoxPublisher.Location = new System.Drawing.Point(330, 125);
             this.textBoxPublisher.Name = "textBoxPublisher";
             this.textBoxPublisher.Size = new System.Drawing.Size(140, 20);
             this.textBoxPublisher.TabIndex = 7;
@@ -149,7 +149,7 @@
             this.disciplinesComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "Disciplines", true));
             this.disciplinesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.disciplinesComboBox.FormattingEnabled = true;
-            this.disciplinesComboBox.Location = new System.Drawing.Point(327, 116);
+            this.disciplinesComboBox.Location = new System.Drawing.Point(330, 171);
             this.disciplinesComboBox.Name = "disciplinesComboBox";
             this.disciplinesComboBox.Size = new System.Drawing.Size(139, 21);
             this.disciplinesComboBox.TabIndex = 10;
@@ -157,7 +157,7 @@
             // textBoxYear
             // 
             this.textBoxYear.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "Year", true));
-            this.textBoxYear.Location = new System.Drawing.Point(327, 197);
+            this.textBoxYear.Location = new System.Drawing.Point(330, 252);
             this.textBoxYear.Mask = "0000";
             this.textBoxYear.Name = "textBoxYear";
             this.textBoxYear.Size = new System.Drawing.Size(35, 20);
@@ -165,7 +165,7 @@
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(15, 260);
+            this.buttonBack.Location = new System.Drawing.Point(15, 291);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(141, 41);
             this.buttonBack.TabIndex = 16;
@@ -174,7 +174,7 @@
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(181, 305);
+            this.buttonEdit.Location = new System.Drawing.Point(181, 316);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(141, 41);
             this.buttonEdit.TabIndex = 16;
@@ -185,7 +185,7 @@
             // textBoxName
             // 
             this.textBoxName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "Name", true));
-            this.textBoxName.Location = new System.Drawing.Point(327, 28);
+            this.textBoxName.Location = new System.Drawing.Point(330, 83);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(140, 20);
             this.textBoxName.TabIndex = 3;
@@ -196,7 +196,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(340, 260);
+            this.buttonDelete.Location = new System.Drawing.Point(341, 291);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(141, 41);
             this.buttonDelete.TabIndex = 16;
@@ -208,7 +208,7 @@
             // 
             this.comboBoxAuthors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxAuthors.FormattingEnabled = true;
-            this.comboBoxAuthors.Location = new System.Drawing.Point(326, 159);
+            this.comboBoxAuthors.Location = new System.Drawing.Point(329, 214);
             this.comboBoxAuthors.Name = "comboBoxAuthors";
             this.comboBoxAuthors.Size = new System.Drawing.Size(139, 21);
             this.comboBoxAuthors.TabIndex = 17;

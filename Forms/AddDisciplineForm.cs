@@ -16,5 +16,13 @@ namespace Diploma.Forms
         {
             InitializeComponent();
         }
+        Disciplines disciplines = new Disciplines();
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            disciplines.Class = Int32.Parse(maskedTextBoxClass.Text);
+            disciplines.Name = nameTextBox.Text;
+
+        }
     }
 }

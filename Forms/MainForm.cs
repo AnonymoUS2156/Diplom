@@ -8,14 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MaterialSkin;
+using MaterialSkin.Controls;
 namespace Diploma
 {
-    public partial class MainForm : Form
+    public partial class MainForm : MaterialForm
     {
         public MainForm()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue400, Accent.LightBlue100, TextShade.WHITE);
         }
         public static Model model = new Model();
         List<Book> books = model.Book.ToList();
@@ -83,23 +88,45 @@ namespace Diploma
             // добавить откат поискового запроса при отсутствии символов в поисковой строке
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        
+
+        
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
+
+            AddDisciplineForm addDisciplineForm = new AddDisciplineForm();
+            addDisciplineForm.ShowDialog();
             ReadersForm readersForm = new ReadersForm();
             readersForm.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAddBook_Click(object sender, EventArgs e)
         {
             AddBookForm addBookForm = new AddBookForm();
             addBookForm.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            AddDisciplineForm addDisciplineForm = new AddDisciplineForm();
-            addDisciplineForm.ShowDialog();
+
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
+        {
+
+            AddBookForm addBookForm = new AddBookForm();
+            addBookForm.ShowDialog();
+        }
+
+        private void materialRaisedButton4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

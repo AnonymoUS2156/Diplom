@@ -34,41 +34,30 @@
             System.Windows.Forms.Label surnameLabel;
             System.Windows.Forms.Label emailLabel;
             System.Windows.Forms.Label phoneLabel1;
-            System.Windows.Forms.Label labelName;
-            System.Windows.Forms.Label labelSecondName;
-            System.Windows.Forms.Label labelPhone;
-            System.Windows.Forms.Label labelEmail;
             System.Windows.Forms.Label label6;
-            System.Windows.Forms.Label labelDepartment;
-            System.Windows.Forms.Label reservedBookIDLabel;
-            System.Windows.Forms.Label labelReservedBookName;
-            System.Windows.Forms.Label isReservedLabel;
-            this.isReservedCheckBox = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelSurname = new System.Windows.Forms.Label();
+            this.labelPhone = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelSecondName = new System.Windows.Forms.Label();
+            this.labelDepartment = new System.Windows.Forms.Label();
+            this.labelBookName = new System.Windows.Forms.Label();
+            this.checkBoxReserved = new System.Windows.Forms.CheckBox();
+            this.labelnasas = new System.Windows.Forms.Label();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             secondNameLabel = new System.Windows.Forms.Label();
             surnameLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
             phoneLabel1 = new System.Windows.Forms.Label();
-            labelName = new System.Windows.Forms.Label();
-            labelSecondName = new System.Windows.Forms.Label();
-            labelPhone = new System.Windows.Forms.Label();
-            labelEmail = new System.Windows.Forms.Label();
             label6 = new System.Windows.Forms.Label();
-            labelDepartment = new System.Windows.Forms.Label();
-            reservedBookIDLabel = new System.Windows.Forms.Label();
-            labelReservedBookName = new System.Windows.Forms.Label();
-            isReservedLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(183, 11);
+            nameLabel.Location = new System.Drawing.Point(160, 11);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(29, 13);
             nameLabel.TabIndex = 1;
@@ -77,7 +66,7 @@
             // secondNameLabel
             // 
             secondNameLabel.AutoSize = true;
-            secondNameLabel.Location = new System.Drawing.Point(305, 11);
+            secondNameLabel.Location = new System.Drawing.Point(299, 9);
             secondNameLabel.Name = "secondNameLabel";
             secondNameLabel.Size = new System.Drawing.Size(54, 13);
             secondNameLabel.TabIndex = 2;
@@ -95,7 +84,7 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(177, 40);
+            emailLabel.Location = new System.Drawing.Point(160, 40);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(35, 13);
             emailLabel.TabIndex = 11;
@@ -110,152 +99,123 @@
             phoneLabel1.TabIndex = 12;
             phoneLabel1.Text = "Телефон";
             // 
-            // labelName
-            // 
-            labelName.AutoSize = true;
-            labelName.Location = new System.Drawing.Point(218, 11);
-            labelName.Name = "labelName";
-            labelName.Size = new System.Drawing.Size(29, 13);
-            labelName.TabIndex = 14;
-            labelName.Text = "Имя";
-            // 
-            // labelSecondName
-            // 
-            labelSecondName.AutoSize = true;
-            labelSecondName.Location = new System.Drawing.Point(365, 11);
-            labelSecondName.Name = "labelSecondName";
-            labelSecondName.Size = new System.Drawing.Size(54, 13);
-            labelSecondName.TabIndex = 15;
-            labelSecondName.Text = "Отчество";
-            // 
-            // labelPhone
-            // 
-            labelPhone.AutoSize = true;
-            labelPhone.Location = new System.Drawing.Point(76, 40);
-            labelPhone.Name = "labelPhone";
-            labelPhone.Size = new System.Drawing.Size(52, 13);
-            labelPhone.TabIndex = 16;
-            labelPhone.Text = "Телефон";
-            // 
-            // labelEmail
-            // 
-            labelEmail.AutoSize = true;
-            labelEmail.Location = new System.Drawing.Point(218, 40);
-            labelEmail.Name = "labelEmail";
-            labelEmail.Size = new System.Drawing.Size(35, 13);
-            labelEmail.TabIndex = 17;
-            labelEmail.Text = "Email:";
-            labelEmail.Click += new System.EventHandler(this.labelEmail_Click);
-            // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(311, 40);
+            label6.Location = new System.Drawing.Point(299, 40);
             label6.Name = "label6";
             label6.Size = new System.Drawing.Size(38, 13);
             label6.TabIndex = 18;
             label6.Text = "Отдел";
             // 
+            // labelSurname
+            // 
+            this.labelSurname.AutoSize = true;
+            this.labelSurname.Location = new System.Drawing.Point(73, 11);
+            this.labelSurname.Name = "labelSurname";
+            this.labelSurname.Size = new System.Drawing.Size(71, 13);
+            this.labelSurname.TabIndex = 20;
+            this.labelSurname.Text = "labelSurname";
+            // 
+            // labelPhone
+            // 
+            this.labelPhone.AutoSize = true;
+            this.labelPhone.Location = new System.Drawing.Point(73, 40);
+            this.labelPhone.Name = "labelPhone";
+            this.labelPhone.Size = new System.Drawing.Size(60, 13);
+            this.labelPhone.TabIndex = 21;
+            this.labelPhone.Text = "labelPhone";
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(201, 11);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(57, 13);
+            this.labelName.TabIndex = 22;
+            this.labelName.Text = "labelName";
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(201, 40);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(54, 13);
+            this.labelEmail.TabIndex = 23;
+            this.labelEmail.Text = "labelEmail";
+            // 
+            // labelSecondName
+            // 
+            this.labelSecondName.AutoSize = true;
+            this.labelSecondName.Location = new System.Drawing.Point(355, 9);
+            this.labelSecondName.Name = "labelSecondName";
+            this.labelSecondName.Size = new System.Drawing.Size(94, 13);
+            this.labelSecondName.TabIndex = 24;
+            this.labelSecondName.Text = "labelSecondName";
+            // 
             // labelDepartment
             // 
-            labelDepartment.AutoSize = true;
-            labelDepartment.Location = new System.Drawing.Point(352, 40);
-            labelDepartment.Name = "labelDepartment";
-            labelDepartment.Size = new System.Drawing.Size(35, 13);
-            labelDepartment.TabIndex = 19;
-            labelDepartment.Text = "пусто";
+            this.labelDepartment.AutoSize = true;
+            this.labelDepartment.Location = new System.Drawing.Point(355, 40);
+            this.labelDepartment.Name = "labelDepartment";
+            this.labelDepartment.Size = new System.Drawing.Size(84, 13);
+            this.labelDepartment.TabIndex = 25;
+            this.labelDepartment.Text = "labelDepartment";
             // 
-            // reservedBookIDLabel
+            // labelBookName
             // 
-            reservedBookIDLabel.AutoSize = true;
-            reservedBookIDLabel.Location = new System.Drawing.Point(421, 40);
-            reservedBookIDLabel.Name = "reservedBookIDLabel";
-            reservedBookIDLabel.Size = new System.Drawing.Size(89, 13);
-            reservedBookIDLabel.TabIndex = 19;
-            reservedBookIDLabel.Text = "Название книги";
+            this.labelBookName.AutoSize = true;
+            this.labelBookName.Location = new System.Drawing.Point(540, 40);
+            this.labelBookName.Name = "labelBookName";
+            this.labelBookName.Size = new System.Drawing.Size(82, 13);
+            this.labelBookName.TabIndex = 26;
+            this.labelBookName.Text = "labelBookName";
             // 
-            // labelReservedBookName
+            // checkBoxReserved
             // 
-            labelReservedBookName.AutoSize = true;
-            labelReservedBookName.Location = new System.Drawing.Point(516, 40);
-            labelReservedBookName.Name = "labelReservedBookName";
-            labelReservedBookName.Size = new System.Drawing.Size(89, 13);
-            labelReservedBookName.TabIndex = 20;
-            labelReservedBookName.Text = "Название книги";
+            this.checkBoxReserved.AutoSize = true;
+            this.checkBoxReserved.Location = new System.Drawing.Point(497, 9);
+            this.checkBoxReserved.Name = "checkBoxReserved";
+            this.checkBoxReserved.Size = new System.Drawing.Size(149, 17);
+            this.checkBoxReserved.TabIndex = 27;
+            this.checkBoxReserved.Text = "Книга зарезервирована";
+            this.checkBoxReserved.UseVisualStyleBackColor = true;
             // 
-            // isReservedLabel
+            // labelnasas
             // 
-            isReservedLabel.AutoSize = true;
-            isReservedLabel.Location = new System.Drawing.Point(440, 11);
-            isReservedLabel.Name = "isReservedLabel";
-            isReservedLabel.Size = new System.Drawing.Size(132, 13);
-            isReservedLabel.TabIndex = 20;
-            isReservedLabel.Text = "Резервированные книги";
-            // 
-            // isReservedCheckBox
-            // 
-            this.isReservedCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.employeeBindingSource, "IsReserved", true));
-            this.isReservedCheckBox.Location = new System.Drawing.Point(578, 6);
-            this.isReservedCheckBox.Name = "isReservedCheckBox";
-            this.isReservedCheckBox.Size = new System.Drawing.Size(17, 24);
-            this.isReservedCheckBox.TabIndex = 21;
-            this.isReservedCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(76, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "labelSurname";
+            this.labelnasas.AutoSize = true;
+            this.labelnasas.Location = new System.Drawing.Point(445, 40);
+            this.labelnasas.Name = "labelnasas";
+            this.labelnasas.Size = new System.Drawing.Size(89, 13);
+            this.labelnasas.TabIndex = 28;
+            this.labelnasas.Text = "Название книги";
             // 
             // employeeBindingSource
             // 
             this.employeeBindingSource.DataSource = typeof(Diploma.Employee);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(602, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(626, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "label3";
-            // 
             // Readers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(isReservedLabel);
-            this.Controls.Add(this.isReservedCheckBox);
-            this.Controls.Add(labelReservedBookName);
-            this.Controls.Add(reservedBookIDLabel);
-            this.Controls.Add(labelDepartment);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Controls.Add(this.labelnasas);
+            this.Controls.Add(this.checkBoxReserved);
+            this.Controls.Add(this.labelBookName);
+            this.Controls.Add(this.labelDepartment);
+            this.Controls.Add(this.labelSecondName);
+            this.Controls.Add(this.labelEmail);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.labelPhone);
+            this.Controls.Add(this.labelSurname);
             this.Controls.Add(label6);
-            this.Controls.Add(labelEmail);
-            this.Controls.Add(labelPhone);
-            this.Controls.Add(labelSecondName);
-            this.Controls.Add(labelName);
             this.Controls.Add(phoneLabel1);
             this.Controls.Add(emailLabel);
             this.Controls.Add(surnameLabel);
             this.Controls.Add(secondNameLabel);
             this.Controls.Add(nameLabel);
             this.Name = "Readers";
-            this.Size = new System.Drawing.Size(649, 69);
+            this.Size = new System.Drawing.Size(675, 69);
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -265,9 +225,14 @@
         #endregion
 
         private System.Windows.Forms.BindingSource employeeBindingSource;
-        private System.Windows.Forms.CheckBox isReservedCheckBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelSurname;
+        private System.Windows.Forms.Label labelPhone;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelSecondName;
+        private System.Windows.Forms.Label labelDepartment;
+        private System.Windows.Forms.Label labelBookName;
+        private System.Windows.Forms.CheckBox checkBoxReserved;
+        private System.Windows.Forms.Label labelnasas;
     }
 }

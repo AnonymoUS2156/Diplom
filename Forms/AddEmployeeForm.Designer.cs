@@ -29,212 +29,248 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label phoneLabel1;
-            System.Windows.Forms.Label emailLabel;
-            System.Windows.Forms.Label surnameLabel;
-            System.Windows.Forms.Label secondNameLabel;
-            System.Windows.Forms.Label nameLabel;
-            System.Windows.Forms.Label nameLabel1;
-            System.Windows.Forms.Label reservedBookIDLabel;
             this.phoneMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.surnameTextBox = new System.Windows.Forms.TextBox();
             this.secondNameTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.isReservedCheckBox = new System.Windows.Forms.CheckBox();
-            this.buttonAddEmployee = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reservedBookIDTextBox = new System.Windows.Forms.TextBox();
             this.nameComboBox = new System.Windows.Forms.ComboBox();
-            phoneLabel1 = new System.Windows.Forms.Label();
-            emailLabel = new System.Windows.Forms.Label();
-            surnameLabel = new System.Windows.Forms.Label();
-            secondNameLabel = new System.Windows.Forms.Label();
-            nameLabel = new System.Windows.Forms.Label();
-            nameLabel1 = new System.Windows.Forms.Label();
-            reservedBookIDLabel = new System.Windows.Forms.Label();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.isReservedCheckBox = new MaterialSkin.Controls.MaterialRadioButton();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.buttonBack = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.buttonAddEmployee = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // phoneLabel1
-            // 
-            phoneLabel1.AutoSize = true;
-            phoneLabel1.Location = new System.Drawing.Point(190, 15);
-            phoneLabel1.Name = "phoneLabel1";
-            phoneLabel1.Size = new System.Drawing.Size(52, 13);
-            phoneLabel1.TabIndex = 23;
-            phoneLabel1.Text = "Телефон";
             // 
             // phoneMaskedTextBox
             // 
             this.phoneMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Phone", true));
-            this.phoneMaskedTextBox.Location = new System.Drawing.Point(248, 12);
+            this.phoneMaskedTextBox.Location = new System.Drawing.Point(278, 72);
             this.phoneMaskedTextBox.Mask = "+7 (999) 000-0000";
             this.phoneMaskedTextBox.Name = "phoneMaskedTextBox";
             this.phoneMaskedTextBox.Size = new System.Drawing.Size(100, 20);
             this.phoneMaskedTextBox.TabIndex = 25;
             // 
-            // emailLabel
-            // 
-            emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(207, 41);
-            emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(35, 13);
-            emailLabel.TabIndex = 22;
-            emailLabel.Text = "Email:";
-            // 
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(248, 38);
+            this.emailTextBox.Location = new System.Drawing.Point(261, 105);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(100, 20);
             this.emailTextBox.TabIndex = 24;
             // 
-            // surnameLabel
-            // 
-            surnameLabel.AutoSize = true;
-            surnameLabel.Location = new System.Drawing.Point(13, 15);
-            surnameLabel.Name = "surnameLabel";
-            surnameLabel.Size = new System.Drawing.Size(56, 13);
-            surnameLabel.TabIndex = 20;
-            surnameLabel.Text = "Фамилия";
-            // 
             // surnameTextBox
             // 
             this.surnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Surname", true));
-            this.surnameTextBox.Location = new System.Drawing.Point(71, 12);
+            this.surnameTextBox.Location = new System.Drawing.Point(94, 73);
             this.surnameTextBox.Name = "surnameTextBox";
             this.surnameTextBox.Size = new System.Drawing.Size(100, 20);
             this.surnameTextBox.TabIndex = 21;
             // 
-            // secondNameLabel
-            // 
-            secondNameLabel.AutoSize = true;
-            secondNameLabel.Location = new System.Drawing.Point(11, 73);
-            secondNameLabel.Name = "secondNameLabel";
-            secondNameLabel.Size = new System.Drawing.Size(54, 13);
-            secondNameLabel.TabIndex = 17;
-            secondNameLabel.Text = "Отчество";
-            // 
             // secondNameTextBox
             // 
             this.secondNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "SecondName", true));
-            this.secondNameTextBox.Location = new System.Drawing.Point(71, 70);
+            this.secondNameTextBox.Location = new System.Drawing.Point(94, 131);
             this.secondNameTextBox.Name = "secondNameTextBox";
             this.secondNameTextBox.Size = new System.Drawing.Size(100, 20);
             this.secondNameTextBox.TabIndex = 19;
             // 
-            // nameLabel
-            // 
-            nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(36, 47);
-            nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(29, 13);
-            nameLabel.TabIndex = 16;
-            nameLabel.Text = "Имя";
-            // 
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(71, 42);
+            this.nameTextBox.Location = new System.Drawing.Point(85, 103);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 20);
             this.nameTextBox.TabIndex = 18;
             // 
-            // isReservedCheckBox
-            // 
-            this.isReservedCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.employeeBindingSource, "IsReserved", true));
-            this.isReservedCheckBox.Location = new System.Drawing.Point(382, 10);
-            this.isReservedCheckBox.Name = "isReservedCheckBox";
-            this.isReservedCheckBox.Size = new System.Drawing.Size(154, 24);
-            this.isReservedCheckBox.TabIndex = 27;
-            this.isReservedCheckBox.Text = "Зарезервирована книга";
-            this.isReservedCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // buttonAddEmployee
-            // 
-            this.buttonAddEmployee.Location = new System.Drawing.Point(478, 78);
-            this.buttonAddEmployee.Name = "buttonAddEmployee";
-            this.buttonAddEmployee.Size = new System.Drawing.Size(101, 28);
-            this.buttonAddEmployee.TabIndex = 29;
-            this.buttonAddEmployee.Text = "Добавить";
-            this.buttonAddEmployee.UseVisualStyleBackColor = true;
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.Location = new System.Drawing.Point(247, 78);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(101, 28);
-            this.buttonBack.TabIndex = 30;
-            this.buttonBack.Text = "Назад";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataSource = typeof(Diploma.Employee);
-            // 
-            // nameLabel1
-            // 
-            nameLabel1.AutoSize = true;
-            nameLabel1.Location = new System.Drawing.Point(554, 15);
-            nameLabel1.Name = "nameLabel1";
-            nameLabel1.Size = new System.Drawing.Size(95, 13);
-            nameLabel1.TabIndex = 31;
-            nameLabel1.Text = "Название отдела";
-            // 
             // reservedBookIDTextBox
             // 
             this.reservedBookIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "ReservedBookID", true));
-            this.reservedBookIDTextBox.Location = new System.Drawing.Point(487, 38);
+            this.reservedBookIDTextBox.Location = new System.Drawing.Point(501, 105);
             this.reservedBookIDTextBox.Name = "reservedBookIDTextBox";
             this.reservedBookIDTextBox.ReadOnly = true;
             this.reservedBookIDTextBox.Size = new System.Drawing.Size(29, 20);
             this.reservedBookIDTextBox.TabIndex = 28;
             // 
-            // reservedBookIDLabel
-            // 
-            reservedBookIDLabel.AutoSize = true;
-            reservedBookIDLabel.Location = new System.Drawing.Point(383, 43);
-            reservedBookIDLabel.Name = "reservedBookIDLabel";
-            reservedBookIDLabel.Size = new System.Drawing.Size(98, 13);
-            reservedBookIDLabel.TabIndex = 26;
-            reservedBookIDLabel.Text = "Reserved Book ID:";
-            // 
             // nameComboBox
             // 
             this.nameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Department1.Name", true));
             this.nameComboBox.FormattingEnabled = true;
-            this.nameComboBox.Location = new System.Drawing.Point(557, 38);
+            this.nameComboBox.Location = new System.Drawing.Point(585, 102);
             this.nameComboBox.Name = "nameComboBox";
-            this.nameComboBox.Size = new System.Drawing.Size(92, 21);
+            this.nameComboBox.Size = new System.Drawing.Size(114, 21);
             this.nameComboBox.TabIndex = 32;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(13, 74);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(73, 18);
+            this.materialLabel1.TabIndex = 33;
+            this.materialLabel1.Text = "Фамилия";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(28, 105);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(38, 18);
+            this.materialLabel2.TabIndex = 34;
+            this.materialLabel2.Text = "Имя";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(13, 132);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(75, 18);
+            this.materialLabel3.TabIndex = 35;
+            this.materialLabel3.Text = "Отчество";
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(205, 107);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(49, 18);
+            this.materialLabel4.TabIndex = 36;
+            this.materialLabel4.Text = "Email:";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel5.Location = new System.Drawing.Point(200, 72);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(72, 18);
+            this.materialLabel5.TabIndex = 37;
+            this.materialLabel5.Text = "Телефон";
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel6.Location = new System.Drawing.Point(581, 75);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(129, 18);
+            this.materialLabel6.TabIndex = 38;
+            this.materialLabel6.Text = "Название отдела";
+            this.materialLabel6.Click += new System.EventHandler(this.materialLabel6_Click);
+            // 
+            // isReservedCheckBox
+            // 
+            this.isReservedCheckBox.AutoSize = true;
+            this.isReservedCheckBox.Depth = 0;
+            this.isReservedCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.isReservedCheckBox.Location = new System.Drawing.Point(381, 67);
+            this.isReservedCheckBox.Margin = new System.Windows.Forms.Padding(0);
+            this.isReservedCheckBox.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.isReservedCheckBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.isReservedCheckBox.Name = "isReservedCheckBox";
+            this.isReservedCheckBox.Ripple = true;
+            this.isReservedCheckBox.Size = new System.Drawing.Size(184, 30);
+            this.isReservedCheckBox.TabIndex = 39;
+            this.isReservedCheckBox.TabStop = true;
+            this.isReservedCheckBox.Text = "Зарезервирована книга";
+            this.isReservedCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel7.Location = new System.Drawing.Point(370, 107);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(120, 18);
+            this.materialLabel7.TabIndex = 40;
+            this.materialLabel7.Text = "ID резерв. книги";
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.Depth = 0;
+            this.buttonBack.Location = new System.Drawing.Point(235, 139);
+            this.buttonBack.MouseState = MaterialSkin.MouseState.HOVER;
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Primary = true;
+            this.buttonBack.Size = new System.Drawing.Size(109, 32);
+            this.buttonBack.TabIndex = 41;
+            this.buttonBack.Text = "Назад";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            // 
+            // buttonAddEmployee
+            // 
+            this.buttonAddEmployee.Depth = 0;
+            this.buttonAddEmployee.Location = new System.Drawing.Point(421, 139);
+            this.buttonAddEmployee.MouseState = MaterialSkin.MouseState.HOVER;
+            this.buttonAddEmployee.Name = "buttonAddEmployee";
+            this.buttonAddEmployee.Primary = true;
+            this.buttonAddEmployee.Size = new System.Drawing.Size(109, 32);
+            this.buttonAddEmployee.TabIndex = 42;
+            this.buttonAddEmployee.Text = "Добавить";
+            this.buttonAddEmployee.UseVisualStyleBackColor = true;
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(Diploma.Employee);
             // 
             // AddEmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 116);
-            this.Controls.Add(this.nameComboBox);
-            this.Controls.Add(nameLabel1);
-            this.Controls.Add(this.buttonBack);
+            this.ClientSize = new System.Drawing.Size(728, 179);
             this.Controls.Add(this.buttonAddEmployee);
-            this.Controls.Add(phoneLabel1);
-            this.Controls.Add(this.phoneMaskedTextBox);
-            this.Controls.Add(emailLabel);
-            this.Controls.Add(this.emailTextBox);
-            this.Controls.Add(surnameLabel);
-            this.Controls.Add(this.surnameTextBox);
-            this.Controls.Add(secondNameLabel);
-            this.Controls.Add(this.secondNameTextBox);
-            this.Controls.Add(nameLabel);
-            this.Controls.Add(this.nameTextBox);
-            this.Controls.Add(reservedBookIDLabel);
-            this.Controls.Add(this.reservedBookIDTextBox);
+            this.Controls.Add(this.buttonBack);
+            this.Controls.Add(this.materialLabel7);
             this.Controls.Add(this.isReservedCheckBox);
+            this.Controls.Add(this.materialLabel6);
+            this.Controls.Add(this.materialLabel5);
+            this.Controls.Add(this.materialLabel4);
+            this.Controls.Add(this.materialLabel3);
+            this.Controls.Add(this.materialLabel2);
+            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.nameComboBox);
+            this.Controls.Add(this.phoneMaskedTextBox);
+            this.Controls.Add(this.emailTextBox);
+            this.Controls.Add(this.surnameTextBox);
+            this.Controls.Add(this.secondNameTextBox);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.reservedBookIDTextBox);
             this.Name = "AddEmployeeForm";
-            this.Text = "AddEmployeeForm";
+            this.Text = "Добавить читателя";
+            this.Load += new System.EventHandler(this.AddEmployeeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,10 +285,17 @@
         private System.Windows.Forms.TextBox surnameTextBox;
         private System.Windows.Forms.TextBox secondNameTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
-        private System.Windows.Forms.CheckBox isReservedCheckBox;
-        private System.Windows.Forms.Button buttonAddEmployee;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.TextBox reservedBookIDTextBox;
         private System.Windows.Forms.ComboBox nameComboBox;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private MaterialSkin.Controls.MaterialRadioButton isReservedCheckBox;
+        private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private MaterialSkin.Controls.MaterialRaisedButton buttonBack;
+        private MaterialSkin.Controls.MaterialRaisedButton buttonAddEmployee;
     }
 }
