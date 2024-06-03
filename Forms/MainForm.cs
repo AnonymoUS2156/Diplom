@@ -127,5 +127,11 @@ namespace Diploma
             AddAuthorForm addAuthorForm = new AddAuthorForm();
             addAuthorForm.ShowDialog(this);
         }
+
+        private void buttonAddDicipline_Click(object sender, EventArgs e)
+        {
+            AddDisciplineForm addDisciplineForm = new AddDisciplineForm();
+            addDisciplineForm.ShowDialog();
+        }
     }
 }

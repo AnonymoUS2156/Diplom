@@ -73,37 +73,34 @@ namespace Diploma.Forms
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            model.Book.Remove(thisbook);
-            try
-            {
-            model.SaveChanges();
-
-            }
-            catch (Exception ex)
-            {
-
-            }
+                model.Book.Remove(thisbook);
+                model.SaveChanges();
+            
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
 
             UpdateBook();
+
+            model.SaveChanges();
         }
 
         private void UpdateBook()
         {
-            textBoxName.Text = thisbook.Name;
-            textBoxPublisher.Text = thisbook.Publisher.Name;
-            textBoxISBN.Text = thisbook.ISBN.ToString();
-            textBoxYear.Text = thisbook.Year.ToString();
+            thisbook.Name = textBoxName.Text;
             thisbook.Publisher.Name = textBoxPublisher.Text;
-            thisbook.ISBN = textBoxISBN.Text;
+            thisbook.ISBN = textBoxISBN.Text ;
+            thisbook.Publisher.Name = textBoxPublisher.Text;
             thisbook.Year = Int32.Parse(textBoxYear.Text);
-
             thisbook.Author = authors[comboBoxAuthors.SelectedIndex];
             thisbook.Disciplines1 = disciplines[disciplinesComboBox.SelectedIndex];
-            model.SaveChanges();
+            MessageBox.Show("Данные успешно обновлены");
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

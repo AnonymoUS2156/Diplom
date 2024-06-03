@@ -40,9 +40,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonAdd = new MaterialSkin.Controls.MaterialRaisedButton();
             this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.author_SignTextBox = new System.Windows.Forms.TextBox();
-            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.authorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
@@ -155,6 +155,7 @@
             this.buttonAdd.TabIndex = 65;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // priceTextBox
             // 
@@ -163,6 +164,10 @@
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(100, 20);
             this.priceTextBox.TabIndex = 67;
+            // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataSource = typeof(Diploma.Book);
             // 
             // maskedTextBox1
             // 
@@ -179,10 +184,6 @@
             this.author_SignTextBox.Name = "author_SignTextBox";
             this.author_SignTextBox.Size = new System.Drawing.Size(100, 20);
             this.author_SignTextBox.TabIndex = 70;
-            // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataSource = typeof(Diploma.Book);
             // 
             // authorBindingSource
             // 
@@ -313,7 +314,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 432);
+            this.ClientSize = new System.Drawing.Size(694, 432);
             this.Controls.Add(this.materialLabel9);
             this.Controls.Add(this.materialLabel8);
             this.Controls.Add(this.materialLabel7);

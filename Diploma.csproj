@@ -138,6 +138,9 @@
     <EmbeddedResource Include="Forms\AddAuthorForm.resx">
       <DependentUpon>AddAuthorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddAuthorForm.ru-RU.resx">
+      <DependentUpon>AddAuthorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddBookForm.resx">
       <DependentUpon>AddBookForm.cs</DependentUpon>
       <SubType>Designer</SubType>

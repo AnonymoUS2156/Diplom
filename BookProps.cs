@@ -20,6 +20,7 @@ namespace Diploma
         }
         public void Fill(Book book)
         {
+            
             _book = book;
             labelBookName.Text = book.Name;
             labelAuthor.Text = book.Author.Abbreviation.ToString();

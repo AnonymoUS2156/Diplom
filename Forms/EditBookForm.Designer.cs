@@ -37,6 +37,7 @@
             System.Windows.Forms.Label Заголовок;
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxISBN = new System.Windows.Forms.MaskedTextBox();
+            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBoxPublisher = new System.Windows.Forms.TextBox();
             this.disciplinesComboBox = new System.Windows.Forms.ComboBox();
             this.textBoxYear = new System.Windows.Forms.MaskedTextBox();
@@ -45,7 +46,6 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.comboBoxAuthors = new System.Windows.Forms.ComboBox();
-            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             iSBNLabel = new System.Windows.Forms.Label();
             nameLabel1 = new System.Windows.Forms.Label();
@@ -131,6 +131,10 @@
             this.textBoxISBN.Size = new System.Drawing.Size(84, 20);
             this.textBoxISBN.TabIndex = 5;
             // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataSource = typeof(Diploma.Book);
+            // 
             // textBoxPublisher
             // 
             this.textBoxPublisher.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "Publisher.Name", true));
@@ -167,6 +171,7 @@
             this.buttonBack.TabIndex = 16;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonEdit
             // 
@@ -204,10 +209,6 @@
             this.comboBoxAuthors.Name = "comboBoxAuthors";
             this.comboBoxAuthors.Size = new System.Drawing.Size(139, 21);
             this.comboBoxAuthors.TabIndex = 17;
-            // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataSource = typeof(Diploma.Book);
             // 
             // modelBindingSource
             // 

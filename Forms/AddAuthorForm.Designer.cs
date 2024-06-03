@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddAuthorForm));
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
@@ -44,6 +44,7 @@
             this.surnameTextBox = new System.Windows.Forms.TextBox();
             this.secondNameTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.authorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,165 +52,121 @@
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 80);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 87);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 63;
-            this.pictureBox1.TabStop = false;
-            // 
             // materialLabel6
             // 
-            this.materialLabel6.AutoSize = true;
+            resources.ApplyResources(this.materialLabel6, "materialLabel6");
             this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(401, 162);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(96, 18);
-            this.materialLabel6.TabIndex = 62;
-            this.materialLabel6.Text = "Абревиатура";
             // 
             // materialLabel5
             // 
-            this.materialLabel5.AutoSize = true;
+            resources.ApplyResources(this.materialLabel5, "materialLabel5");
             this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(438, 116);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(37, 18);
-            this.materialLabel5.TabIndex = 61;
-            this.materialLabel5.Text = "Пол";
             // 
             // materialLabel4
             // 
-            this.materialLabel4.AutoSize = true;
+            resources.ApplyResources(this.materialLabel4, "materialLabel4");
             this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(398, 76);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(116, 18);
-            this.materialLabel4.TabIndex = 60;
-            this.materialLabel4.Text = "Дата рождения";
             // 
             // materialLabel3
             // 
-            this.materialLabel3.AutoSize = true;
+            resources.ApplyResources(this.materialLabel3, "materialLabel3");
             this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(118, 163);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(75, 18);
-            this.materialLabel3.TabIndex = 59;
-            this.materialLabel3.Text = "Отчество";
             // 
             // materialLabel2
             // 
-            this.materialLabel2.AutoSize = true;
+            resources.ApplyResources(this.materialLabel2, "materialLabel2");
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(150, 120);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(38, 18);
-            this.materialLabel2.TabIndex = 58;
-            this.materialLabel2.Text = "Имя";
             // 
             // materialLabel1
             // 
-            this.materialLabel1.AutoSize = true;
+            resources.ApplyResources(this.materialLabel1, "materialLabel1");
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(115, 80);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(73, 18);
-            this.materialLabel1.TabIndex = 57;
-            this.materialLabel1.Text = "Фамилия";
             // 
             // buttonBack
             // 
+            resources.ApplyResources(this.buttonBack, "buttonBack");
             this.buttonBack.Depth = 0;
-            this.buttonBack.Location = new System.Drawing.Point(110, 219);
             this.buttonBack.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Primary = true;
-            this.buttonBack.Size = new System.Drawing.Size(127, 45);
-            this.buttonBack.TabIndex = 56;
-            this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = true;
             // 
             // buttonAddBook
             // 
+            resources.ApplyResources(this.buttonAddBook, "buttonAddBook");
             this.buttonAddBook.Depth = 0;
-            this.buttonAddBook.Location = new System.Drawing.Point(441, 219);
             this.buttonAddBook.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonAddBook.Name = "buttonAddBook";
             this.buttonAddBook.Primary = true;
-            this.buttonAddBook.Size = new System.Drawing.Size(127, 45);
-            this.buttonAddBook.TabIndex = 55;
-            this.buttonAddBook.Text = "Добавить";
             this.buttonAddBook.UseVisualStyleBackColor = true;
+            this.buttonAddBook.Click += new System.EventHandler(this.buttonAddBook_Click);
             // 
             // abbreviationTextBox
             // 
+            resources.ApplyResources(this.abbreviationTextBox, "abbreviationTextBox");
             this.abbreviationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.authorBindingSource, "Abbreviation", true));
-            this.abbreviationTextBox.Location = new System.Drawing.Point(506, 161);
             this.abbreviationTextBox.Name = "abbreviationTextBox";
-            this.abbreviationTextBox.Size = new System.Drawing.Size(137, 20);
-            this.abbreviationTextBox.TabIndex = 54;
             // 
             // genderComboBox
             // 
+            resources.ApplyResources(this.genderComboBox, "genderComboBox");
             this.genderComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.authorBindingSource, "Gender", true));
+            this.genderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genderComboBox.FormattingEnabled = true;
-            this.genderComboBox.Location = new System.Drawing.Point(493, 116);
+            this.genderComboBox.Items.AddRange(new object[] {
+            resources.GetString("genderComboBox.Items"),
+            resources.GetString("genderComboBox.Items1")});
             this.genderComboBox.Name = "genderComboBox";
-            this.genderComboBox.Size = new System.Drawing.Size(35, 21);
-            this.genderComboBox.TabIndex = 53;
             // 
             // birthdayDateTimePicker
             // 
+            resources.ApplyResources(this.birthdayDateTimePicker, "birthdayDateTimePicker");
             this.birthdayDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.authorBindingSource, "Birthday", true));
-            this.birthdayDateTimePicker.Location = new System.Drawing.Point(529, 77);
+            this.birthdayDateTimePicker.MaxDate = new System.DateTime(2024, 6, 3, 0, 0, 0, 0);
             this.birthdayDateTimePicker.Name = "birthdayDateTimePicker";
-            this.birthdayDateTimePicker.Size = new System.Drawing.Size(137, 20);
-            this.birthdayDateTimePicker.TabIndex = 52;
+            this.birthdayDateTimePicker.Value = new System.DateTime(2024, 6, 3, 0, 0, 0, 0);
             // 
             // surnameTextBox
             // 
+            resources.ApplyResources(this.surnameTextBox, "surnameTextBox");
             this.surnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.authorBindingSource, "Surname", true));
-            this.surnameTextBox.Location = new System.Drawing.Point(199, 78);
             this.surnameTextBox.Name = "surnameTextBox";
-            this.surnameTextBox.Size = new System.Drawing.Size(183, 20);
-            this.surnameTextBox.TabIndex = 51;
             // 
             // secondNameTextBox
             // 
+            resources.ApplyResources(this.secondNameTextBox, "secondNameTextBox");
             this.secondNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.authorBindingSource, "SecondName", true));
-            this.secondNameTextBox.Location = new System.Drawing.Point(199, 162);
             this.secondNameTextBox.Name = "secondNameTextBox";
-            this.secondNameTextBox.Size = new System.Drawing.Size(183, 20);
-            this.secondNameTextBox.TabIndex = 50;
             // 
             // nameTextBox
             // 
+            resources.ApplyResources(this.nameTextBox, "nameTextBox");
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.authorBindingSource, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(199, 120);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(183, 20);
-            this.nameTextBox.TabIndex = 49;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // authorBindingSource
             // 
@@ -221,9 +178,8 @@
             // 
             // AddAuthorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 288);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.materialLabel6);
             this.Controls.Add(this.materialLabel5);
@@ -240,7 +196,6 @@
             this.Controls.Add(this.secondNameTextBox);
             this.Controls.Add(this.nameTextBox);
             this.Name = "AddAuthorForm";
-            this.Text = "Добавить автора";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.authorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();

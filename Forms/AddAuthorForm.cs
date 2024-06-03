@@ -24,5 +24,21 @@ namespace Diploma.Forms
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue400, Accent.LightBlue100, TextShade.WHITE);
 
         }
+
+        private Model model = MainForm.model;
+        private Author author = new Author();
+        private void buttonAddBook_Click(object sender, EventArgs e)
+        {
+            author.Surname = surnameTextBox.Text;
+            author.Name = nameTextBox.Text;
+            author.SecondName = secondNameTextBox.Text;
+            author.Birthday = birthdayDateTimePicker.Value ;
+            author.Gender = genderComboBox.SelectedIndex;
+            author.Abbreviation = abbreviationTextBox.Text;
+            model.Author.Add(author);
+            model.SaveChanges();
+            MessageBox.Show("Данные сохранены");
+            Close();
+        }
     }
 }

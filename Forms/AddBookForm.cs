@@ -41,5 +41,10 @@ namespace Diploma
         {
 
         }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

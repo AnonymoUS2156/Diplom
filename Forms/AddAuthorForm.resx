@@ -117,10 +117,430 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="authorBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1005, 17</value>
+  <data name="&gt;&gt;materialLabel6.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="materialLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 45</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;buttonBack.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialForm, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 80</value>
+  </data>
+  <data name="&gt;&gt;genderComboBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;buttonBack.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRaisedButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;secondNameTextBox.Name" xml:space="preserve">
+    <value>secondNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;buttonAddBook.Name" xml:space="preserve">
+    <value>buttonAddBook</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="materialLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;genderComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="abbreviationTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 20</value>
+  </data>
+  <data name="secondNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 162</value>
+  </data>
+  <data name="materialLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 19</value>
+  </data>
+  <data name="materialLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 19</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="materialLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 19</value>
+  </data>
+  <data name="&gt;&gt;buttonAddBook.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="materialLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 163</value>
+  </data>
+  <data name="materialLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 19</value>
+  </data>
+  <data name="&gt;&gt;buttonAddBook.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRaisedButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;birthdayDateTimePicker.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;materialLabel6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="surnameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Name" xml:space="preserve">
+    <value>materialLabel3</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;birthdayDateTimePicker.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Name" xml:space="preserve">
+    <value>materialLabel1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.Name" xml:space="preserve">
+    <value>materialLabel4</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="materialLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="birthdayDateTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;surnameTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="genderComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="materialLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.Name" xml:space="preserve">
+    <value>materialLabel5</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;secondNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;secondNameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Добавить автора</value>
+  </data>
+  <data name="materialLabel2.Text" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="materialLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 19</value>
+  </data>
+  <data name="materialLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="materialLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="materialLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="materialLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="buttonBack.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;buttonBack.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="nameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 120</value>
+  </data>
+  <data name="&gt;&gt;abbreviationTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="genderComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>493, 116</value>
+  </data>
+  <data name="materialLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 76</value>
+  </data>
+  <data name="surnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 78</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="genderComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="&gt;&gt;birthdayDateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="materialLabel4.Text" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="&gt;&gt;surnameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="materialLabel3.Text" xml:space="preserve">
+    <value>Отчество</value>
+  </data>
+  <data name="materialLabel5.Text" xml:space="preserve">
+    <value>Пол</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Name" xml:space="preserve">
+    <value>materialLabel2</value>
+  </data>
+  <data name="&gt;&gt;buttonBack.Name" xml:space="preserve">
+    <value>buttonBack</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>709, 288</value>
+  </data>
+  <data name="buttonBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 219</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 87</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 80</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;genderComboBox.Name" xml:space="preserve">
+    <value>genderComboBox</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;materialLabel6.Name" xml:space="preserve">
+    <value>materialLabel6</value>
+  </data>
+  <data name="&gt;&gt;bookBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="materialLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="buttonAddBook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 45</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="materialLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="&gt;&gt;authorBindingSource.Name" xml:space="preserve">
+    <value>authorBindingSource</value>
+  </data>
+  <data name="buttonAddBook.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 219</value>
+  </data>
+  <data name="materialLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 19</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Name" xml:space="preserve">
+    <value>nameTextBox</value>
+  </data>
+  <data name="&gt;&gt;surnameTextBox.Name" xml:space="preserve">
+    <value>surnameTextBox</value>
+  </data>
+  <data name="&gt;&gt;buttonAddBook.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="buttonBack.Text" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="genderComboBox.Items1" xml:space="preserve">
+    <value>ж</value>
+  </data>
+  <data name="materialLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="materialLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="nameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 20</value>
+  </data>
+  <data name="&gt;&gt;abbreviationTextBox.Name" xml:space="preserve">
+    <value>abbreviationTextBox</value>
+  </data>
+  <data name="genderComboBox.Items" xml:space="preserve">
+    <value>м</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddAuthorForm</value>
+  </data>
+  <data name="materialLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="nameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="surnameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 20</value>
+  </data>
+  <data name="&gt;&gt;bookBindingSource.Name" xml:space="preserve">
+    <value>bookBindingSource</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="birthdayDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 20</value>
+  </data>
+  <data name="materialLabel1.Text" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="abbreviationTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>506, 161</value>
+  </data>
+  <data name="&gt;&gt;genderComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="materialLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 116</value>
+  </data>
+  <data name="&gt;&gt;abbreviationTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="materialLabel6.Text" xml:space="preserve">
+    <value>Абревиатура</value>
+  </data>
+  <data name="materialLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 120</value>
+  </data>
+  <data name="&gt;&gt;secondNameTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="materialLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="birthdayDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>529, 77</value>
+  </data>
+  <data name="buttonAddBook.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="abbreviationTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="materialLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 162</value>
+  </data>
+  <data name="&gt;&gt;abbreviationTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;surnameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="secondNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;birthdayDateTimePicker.Name" xml:space="preserve">
+    <value>birthdayDateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;materialLabel6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonAddBook.Text" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="&gt;&gt;authorBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="secondNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 20</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="bookBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>847, 17</value>
+  </metadata>
+  <metadata name="authorBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1005, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ru-RU</value>
   </metadata>
 </root>

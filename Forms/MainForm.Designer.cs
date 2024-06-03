@@ -131,6 +131,7 @@
             this.buttonAddDicipline.TabIndex = 8;
             this.buttonAddDicipline.Text = "Добавить предмет";
             this.buttonAddDicipline.UseVisualStyleBackColor = true;
+            this.buttonAddDicipline.Click += new System.EventHandler(this.buttonAddDicipline_Click);
             // 
             // materialRaisedButton4
             // 
