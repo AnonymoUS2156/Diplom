@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 
-namespace Diploma
+namespace Diploma.Models
 {
-    public partial class Model : DbContext
+    public partial class Model1 : DbContext
     {
-        public Model()
+        public Model1()
             : base("name=Model1")
         {
         }

@@ -1,4 +1,4 @@
-namespace Diploma
+namespace Diploma.Models
 {
     using System;
     using System.Collections.Generic;
@@ -20,7 +20,7 @@ namespace Diploma
         [StringLength(30)]
         public string SecondName { get; set; }
 
-        [StringLength(11)]
+        [StringLength(20)]
         public string Phone { get; set; }
 
         public int? Department { get; set; }

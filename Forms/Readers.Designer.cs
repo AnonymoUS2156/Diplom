@@ -180,6 +180,7 @@
             this.checkBoxReserved.TabIndex = 27;
             this.checkBoxReserved.Text = "Книга зарезервирована";
             this.checkBoxReserved.UseVisualStyleBackColor = true;
+            this.checkBoxReserved.CheckedChanged += new System.EventHandler(this.checkBoxReserved_CheckedChanged);
             // 
             // labelnasas
             // 
@@ -192,7 +193,7 @@
             // 
             // employeeBindingSource
             // 
-            this.employeeBindingSource.DataSource = typeof(Diploma.Employee);
+            this.employeeBindingSource.DataSource = typeof(Diploma.Models.Employee);
             // 
             // Readers
             // 

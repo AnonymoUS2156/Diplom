@@ -96,7 +96,7 @@
             // 
             // disciplinesBindingSource
             // 
-            this.disciplinesBindingSource.DataSource = typeof(Diploma.Disciplines);
+            this.disciplinesBindingSource.DataSource = typeof(Diploma.Models.Disciplines);
             // 
             // AddDisciplineForm
             // 

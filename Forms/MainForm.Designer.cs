@@ -160,6 +160,8 @@
             this.Controls.Add(this.comboBoxSort);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.MaximumSize = new System.Drawing.Size(859, 450);
+            this.MinimumSize = new System.Drawing.Size(859, 450);
             this.Name = "MainForm";
             this.Text = "Главная форма";
             this.Load += new System.EventHandler(this.MainForm_Load);

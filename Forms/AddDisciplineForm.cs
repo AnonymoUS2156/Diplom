@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Diploma.Models;
 namespace Diploma.Forms
 {
     public partial class AddDisciplineForm : Form

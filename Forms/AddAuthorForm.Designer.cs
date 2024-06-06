@@ -170,11 +170,11 @@
             // 
             // authorBindingSource
             // 
-            this.authorBindingSource.DataSource = typeof(Diploma.Author);
+            this.authorBindingSource.DataSource = typeof(Diploma.Models.Author);
             // 
             // bookBindingSource
             // 
-            this.bookBindingSource.DataSource = typeof(Diploma.Book);
+            this.bookBindingSource.DataSource = typeof(Diploma.Models.Book);
             // 
             // AddAuthorForm
             // 

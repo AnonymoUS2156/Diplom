@@ -59,6 +59,7 @@
             this.buttonAddReader.TabIndex = 3;
             this.buttonAddReader.Text = "Добавить читателя";
             this.buttonAddReader.UseVisualStyleBackColor = true;
+            this.buttonAddReader.Click += new System.EventHandler(this.buttonAddReader_Click);
             // 
             // ReadersForm
             // 

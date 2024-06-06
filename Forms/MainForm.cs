@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using Diploma.Models;
 namespace Diploma
 {
     public partial class MainForm : MaterialForm
@@ -22,7 +23,7 @@ namespace Diploma
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue400, Accent.LightBlue100, TextShade.WHITE);
         }
-        public static Model model = new Model();
+        public static Model1 model = new Model1();
         List<Book> books = model.Book.ToList();
 
         private void Load1()
@@ -95,8 +96,8 @@ namespace Diploma
         private void button2_Click_1(object sender, EventArgs e)
         {
 
-            AddDisciplineForm addDisciplineForm = new AddDisciplineForm();
-            addDisciplineForm.ShowDialog();
+            //AddDisciplineForm addDisciplineForm = new AddDisciplineForm();
+            //addDisciplineForm.ShowDialog();
             ReadersForm readersForm = new ReadersForm();
             readersForm.ShowDialog();
         }

@@ -133,7 +133,7 @@
             // 
             // bookBindingSource
             // 
-            this.bookBindingSource.DataSource = typeof(Diploma.Book);
+            this.bookBindingSource.DataSource = typeof(Diploma.Models.Book);
             // 
             // textBoxPublisher
             // 
@@ -212,7 +212,7 @@
             // 
             // modelBindingSource
             // 
-            this.modelBindingSource.DataSource = typeof(Diploma.Model);
+            this.modelBindingSource.DataSource = typeof(Diploma.Models.Model1);
             // 
             // EditBookForm
             // 

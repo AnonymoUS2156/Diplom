@@ -1,4 +1,5 @@
 ﻿using Diploma.Forms;
+using Diploma.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,8 +19,8 @@ namespace Diploma.Forms
             InitializeComponent();
         }
         private Employee employee1 = new Employee();
-
-        private Model model = MainForm.model;
+        private bool firstLoad = true;
+        private Model1 model = MainForm.model;
         public void Fill(Employee employee)
         {
             employee1 = employee;
@@ -39,6 +40,7 @@ namespace Diploma.Forms
                 labelBookName.Visible = false;
                 labelnasas.Visible = false;
             }
+            firstLoad = false;
         }
 
         private void buttonProps_Click(object sender, EventArgs e)
@@ -47,9 +49,13 @@ namespace Diploma.Forms
             addemployeeForm.ShowDialog();
         }
 
-        
-      
-
-      
+        private void checkBoxReserved_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxReserved.Checked && !firstLoad)
+            {
+                AddBookToEmployee addBookToEmployee = new AddBookToEmployee();
+                addBookToEmployee.ShowDialog();
+            }
+        }
     }
 }

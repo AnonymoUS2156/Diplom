@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Diploma.Models;
 namespace Diploma.Forms
 {
     public partial class AddAuthorForm : MaterialForm
@@ -25,7 +25,7 @@ namespace Diploma.Forms
 
         }
 
-        private Model model = MainForm.model;
+        private Model1 model = MainForm.model;
         private Author author = new Author();
         private void buttonAddBook_Click(object sender, EventArgs e)
         {

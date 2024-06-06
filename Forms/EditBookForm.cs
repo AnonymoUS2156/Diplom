@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using Diploma.Models;
 namespace Diploma.Forms
 {
     public partial class EditBookForm : MaterialForm
     {
-        private Model model = MainForm.model;
+        private Model1 model = MainForm.model;
         private Book thisbook;
 
         private List<Author> authors = new List<Author>();
@@ -39,8 +37,8 @@ namespace Diploma.Forms
             authors = model.Author.ToList();
             disciplines = model.Disciplines.ToList();
 
-            foreach (var autor in authors)
-                comboBoxAuthors.Items.Add(autor.Abbreviation);
+            foreach (var author in authors)
+                comboBoxAuthors.Items.Add(author.Abbreviation);
             foreach (var dis in disciplines)
                 disciplinesComboBox.Items.Add(dis.Name);
         }
@@ -73,29 +71,64 @@ namespace Diploma.Forms
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-                model.Book.Remove(thisbook);
-                model.SaveChanges();
-            
+            model.Book.Remove(thisbook);
+            model.SaveChanges();
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
-
-            UpdateBook();
-
-            model.SaveChanges();
+            try
+            {
+                UpdateBook();
+                model.SaveChanges();
+                MessageBox.Show("Данные успешно обновлены");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Произошла ошибка при обновлении данных: " + ex.Message);
+            }
         }
 
         private void UpdateBook()
         {
-            thisbook.Name = textBoxName.Text;
-            thisbook.Publisher.Name = textBoxPublisher.Text;
-            thisbook.ISBN = textBoxISBN.Text ;
-            thisbook.Publisher.Name = textBoxPublisher.Text;
-            thisbook.Year = Int32.Parse(textBoxYear.Text);
-            thisbook.Author = authors[comboBoxAuthors.SelectedIndex];
-            thisbook.Disciplines1 = disciplines[disciplinesComboBox.SelectedIndex];
-            MessageBox.Show("Данные успешно обновлены");
+            try
+            {
+                thisbook.Name = textBoxName.Text;
+                thisbook.Publisher.Name = textBoxPublisher.Text;
+                thisbook.ISBN = textBoxISBN.Text;
+
+                if (!int.TryParse(textBoxYear.Text, out int year))
+                {
+                    throw new FormatException("Неправильный формат года.");
+                }
+
+                thisbook.Year = year;
+
+                if (comboBoxAuthors.SelectedIndex < 0)
+                {
+                    throw new InvalidOperationException("Выберите автора.");
+                }
+
+                if (disciplinesComboBox.SelectedIndex < 0)
+                {
+                    throw new InvalidOperationException("Выберите дисциплину.");
+                }
+
+                thisbook.Author = authors[comboBoxAuthors.SelectedIndex];
+                thisbook.Disciplines1 = disciplines[disciplinesComboBox.SelectedIndex];
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Ошибка формата: " + ex.Message);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show("Ошибка выбора: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Произошла ошибка: " + ex.Message);
+            }
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
