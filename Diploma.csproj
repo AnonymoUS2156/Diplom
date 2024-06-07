@@ -189,6 +189,15 @@
     <None Include="Properties\DataSources\Book.datasource" />
     <None Include="Properties\DataSources\BookProps.datasource" />
     <None Include="Properties\DataSources\Department.datasource" />
+    <None Include="Properties\DataSources\Diploma.Models.AuthArchivist.datasource" />
+    <None Include="Properties\DataSources\Diploma.Models.Author.datasource" />
+    <None Include="Properties\DataSources\Diploma.Models.Book.datasource" />
+    <None Include="Properties\DataSources\Diploma.Models.Department.datasource" />
+    <None Include="Properties\DataSources\Diploma.Models.Disciplines.datasource" />
+    <None Include="Properties\DataSources\Diploma.Models.Employee.datasource" />
+    <None Include="Properties\DataSources\Diploma.Models.Gender.datasource" />
+    <None Include="Properties\DataSources\Diploma.Models.Model1.datasource" />
+    <None Include="Properties\DataSources\Diploma.Models.Publisher.datasource" />
     <None Include="Properties\DataSources\Disciplines.datasource" />
     <None Include="Properties\DataSources\Employee.datasource" />
     <None Include="Properties\DataSources\Gender.datasource" />
