@@ -37,6 +37,7 @@
             this.buttonAddPublisher = new MaterialSkin.Controls.MaterialRaisedButton();
             this.buttonAddDicipline = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.addUserButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -146,11 +147,25 @@
             this.materialRaisedButton4.UseVisualStyleBackColor = true;
             this.materialRaisedButton4.Click += new System.EventHandler(this.materialRaisedButton4_Click);
             // 
+            // addUserButton
+            // 
+            this.addUserButton.Depth = 0;
+            this.addUserButton.Location = new System.Drawing.Point(639, 319);
+            this.addUserButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.addUserButton.Name = "addUserButton";
+            this.addUserButton.Primary = true;
+            this.addUserButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.addUserButton.Size = new System.Drawing.Size(142, 48);
+            this.addUserButton.TabIndex = 10;
+            this.addUserButton.Text = "Добавить пользователя";
+            this.addUserButton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(859, 450);
+            this.Controls.Add(this.addUserButton);
             this.Controls.Add(this.materialRaisedButton4);
             this.Controls.Add(this.buttonAddDicipline);
             this.Controls.Add(this.buttonAddPublisher);
@@ -181,5 +196,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton buttonAddPublisher;
         private MaterialSkin.Controls.MaterialRaisedButton buttonAddDicipline;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
+        private MaterialSkin.Controls.MaterialRaisedButton addUserButton;
     }
 }

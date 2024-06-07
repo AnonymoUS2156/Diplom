@@ -19,6 +19,7 @@ namespace Diploma.Models
         public virtual DbSet<Employee> Employee { get; set; }
         public virtual DbSet<Gender> Gender { get; set; }
         public virtual DbSet<Publisher> Publisher { get; set; }
+        public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<AuthArchivist> AuthArchivist { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -46,6 +47,11 @@ namespace Diploma.Models
                 .HasMany(e => e.Author)
                 .WithOptional(e => e.Gender1)
                 .HasForeignKey(e => e.Gender);
+
+            modelBuilder.Entity<Roles>()
+                .HasMany(e => e.AuthArchivist)
+                .WithOptional(e => e.Roles)
+                .HasForeignKey(e => e.Role);
         }
     }
 }

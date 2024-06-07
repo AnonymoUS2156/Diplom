@@ -18,5 +18,9 @@ namespace Diploma.Models
         [Column(Order = 1)]
         [StringLength(50)]
         public string Password { get; set; }
+
+        public int? Role { get; set; }
+
+        public virtual Roles Roles { get; set; }
     }
 }
