@@ -34,10 +34,10 @@
             this.comboBoxAtributesSort = new System.Windows.Forms.ComboBox();
             this.button2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.buttonAddBook = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.buttonAddPublisher = new MaterialSkin.Controls.MaterialRaisedButton();
             this.buttonAddDicipline = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.addUserButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -45,12 +45,12 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 77);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(570, 361);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(578, 361);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(612, 186);
+            this.textBoxSearch.Location = new System.Drawing.Point(623, 259);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(169, 20);
             this.textBoxSearch.TabIndex = 2;
@@ -63,7 +63,7 @@
             "По уменьшению",
             "По возрастанию"});
             this.comboBoxSort.FormattingEnabled = true;
-            this.comboBoxSort.Location = new System.Drawing.Point(612, 227);
+            this.comboBoxSort.Location = new System.Drawing.Point(623, 300);
             this.comboBoxSort.Name = "comboBoxSort";
             this.comboBoxSort.Size = new System.Drawing.Size(169, 21);
             this.comboBoxSort.TabIndex = 3;
@@ -75,7 +75,7 @@
             this.comboBoxAtributesSort.Items.AddRange(new object[] {
             "По уменьшению",
             "По увеличению"});
-            this.comboBoxAtributesSort.Location = new System.Drawing.Point(612, 276);
+            this.comboBoxAtributesSort.Location = new System.Drawing.Point(623, 341);
             this.comboBoxAtributesSort.Name = "comboBoxAtributesSort";
             this.comboBoxAtributesSort.Size = new System.Drawing.Size(169, 21);
             this.comboBoxAtributesSort.TabIndex = 3;
@@ -98,7 +98,7 @@
             // buttonAddBook
             // 
             this.buttonAddBook.Depth = 0;
-            this.buttonAddBook.Location = new System.Drawing.Point(588, 77);
+            this.buttonAddBook.Location = new System.Drawing.Point(595, 73);
             this.buttonAddBook.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonAddBook.Name = "buttonAddBook";
             this.buttonAddBook.Primary = true;
@@ -108,23 +108,10 @@
             this.buttonAddBook.UseVisualStyleBackColor = true;
             this.buttonAddBook.Click += new System.EventHandler(this.buttonAddBook_Click);
             // 
-            // buttonAddPublisher
-            // 
-            this.buttonAddPublisher.Depth = 0;
-            this.buttonAddPublisher.Location = new System.Drawing.Point(588, 132);
-            this.buttonAddPublisher.MouseState = MaterialSkin.MouseState.HOVER;
-            this.buttonAddPublisher.Name = "buttonAddPublisher";
-            this.buttonAddPublisher.Primary = true;
-            this.buttonAddPublisher.Size = new System.Drawing.Size(124, 35);
-            this.buttonAddPublisher.TabIndex = 7;
-            this.buttonAddPublisher.Text = "Добавить издательство";
-            this.buttonAddPublisher.UseVisualStyleBackColor = true;
-            this.buttonAddPublisher.Click += new System.EventHandler(this.materialRaisedButton2_Click);
-            // 
             // buttonAddDicipline
             // 
             this.buttonAddDicipline.Depth = 0;
-            this.buttonAddDicipline.Location = new System.Drawing.Point(723, 132);
+            this.buttonAddDicipline.Location = new System.Drawing.Point(730, 128);
             this.buttonAddDicipline.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonAddDicipline.Name = "buttonAddDicipline";
             this.buttonAddDicipline.Primary = true;
@@ -137,7 +124,7 @@
             // materialRaisedButton4
             // 
             this.materialRaisedButton4.Depth = 0;
-            this.materialRaisedButton4.Location = new System.Drawing.Point(723, 78);
+            this.materialRaisedButton4.Location = new System.Drawing.Point(730, 74);
             this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton4.Name = "materialRaisedButton4";
             this.materialRaisedButton4.Primary = true;
@@ -150,25 +137,39 @@
             // addUserButton
             // 
             this.addUserButton.Depth = 0;
-            this.addUserButton.Location = new System.Drawing.Point(639, 319);
+            this.addUserButton.Location = new System.Drawing.Point(595, 125);
             this.addUserButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.addUserButton.Name = "addUserButton";
             this.addUserButton.Primary = true;
             this.addUserButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.addUserButton.Size = new System.Drawing.Size(142, 48);
+            this.addUserButton.Size = new System.Drawing.Size(124, 38);
             this.addUserButton.TabIndex = 10;
             this.addUserButton.Text = "Добавить пользователя";
             this.addUserButton.UseVisualStyleBackColor = true;
+            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
+            // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(595, 180);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(124, 35);
+            this.materialRaisedButton1.TabIndex = 11;
+            this.materialRaisedButton1.Text = "Добавить издателя";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click_1);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(859, 450);
+            this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.addUserButton);
             this.Controls.Add(this.materialRaisedButton4);
             this.Controls.Add(this.buttonAddDicipline);
-            this.Controls.Add(this.buttonAddPublisher);
             this.Controls.Add(this.buttonAddBook);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBoxAtributesSort);
@@ -193,9 +194,9 @@
         private System.Windows.Forms.ComboBox comboBoxAtributesSort;
         private MaterialSkin.Controls.MaterialRaisedButton button2;
         private MaterialSkin.Controls.MaterialRaisedButton buttonAddBook;
-        private MaterialSkin.Controls.MaterialRaisedButton buttonAddPublisher;
         private MaterialSkin.Controls.MaterialRaisedButton buttonAddDicipline;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
         private MaterialSkin.Controls.MaterialRaisedButton addUserButton;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
     }
 }

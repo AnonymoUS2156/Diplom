@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,6 +22,7 @@ namespace Diploma
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue400, Accent.LightBlue100, TextShade.WHITE);
+          
         }
         
 
@@ -40,15 +42,16 @@ namespace Diploma
             AuthArchivist authArchivist;
 
             authArchivist = model1.AuthArchivist.FirstOrDefault(item => item.Login == loginTextBox.Text && item.Password == passwordTextBox.Text);
-            Hide();
-            MainForm mainForm = new MainForm();
-            mainForm.ShowDialog();
 
+            
             if (authArchivist == null)
             {
                 MessageBox.Show("Не найден!");
                 return;
             }
+            Hide();
+            MainForm mainForm = new MainForm();
+            mainForm.ShowDialog();
             
         }
     }

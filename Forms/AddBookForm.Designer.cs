@@ -29,15 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.buttonDelete = new MaterialSkin.Controls.MaterialRaisedButton();
             this.buttonBack = new MaterialSkin.Controls.MaterialRaisedButton();
             this.comboBoxAuthors = new System.Windows.Forms.ComboBox();
             this.textBoxYear = new System.Windows.Forms.MaskedTextBox();
             this.disciplinesComboBox = new System.Windows.Forms.ComboBox();
-            this.textBoxPublisher = new System.Windows.Forms.TextBox();
             this.textBoxISBN = new System.Windows.Forms.MaskedTextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonAdd = new MaterialSkin.Controls.MaterialRaisedButton();
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
@@ -51,6 +48,8 @@
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.publishersComboBox = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.authorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -60,23 +59,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonDelete
-            // 
-            this.buttonDelete.Depth = 0;
-            this.buttonDelete.Location = new System.Drawing.Point(477, 342);
-            this.buttonDelete.MouseState = MaterialSkin.MouseState.HOVER;
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Primary = true;
-            this.buttonDelete.Size = new System.Drawing.Size(127, 45);
-            this.buttonDelete.TabIndex = 40;
-            this.buttonDelete.Text = "Удалить";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click_1);
-            // 
             // buttonBack
             // 
             this.buttonBack.Depth = 0;
-            this.buttonBack.Location = new System.Drawing.Point(90, 342);
+            this.buttonBack.Location = new System.Drawing.Point(78, 354);
             this.buttonBack.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Primary = true;
@@ -84,19 +70,20 @@
             this.buttonBack.TabIndex = 41;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click_1);
             // 
             // comboBoxAuthors
             // 
             this.comboBoxAuthors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxAuthors.FormattingEnabled = true;
-            this.comboBoxAuthors.Location = new System.Drawing.Point(416, 208);
+            this.comboBoxAuthors.Location = new System.Drawing.Point(425, 207);
             this.comboBoxAuthors.Name = "comboBoxAuthors";
             this.comboBoxAuthors.Size = new System.Drawing.Size(139, 21);
             this.comboBoxAuthors.TabIndex = 64;
             // 
             // textBoxYear
             // 
-            this.textBoxYear.Location = new System.Drawing.Point(417, 246);
+            this.textBoxYear.Location = new System.Drawing.Point(426, 245);
             this.textBoxYear.Mask = "0000";
             this.textBoxYear.Name = "textBoxYear";
             this.textBoxYear.Size = new System.Drawing.Size(35, 20);
@@ -106,48 +93,30 @@
             // 
             this.disciplinesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.disciplinesComboBox.FormattingEnabled = true;
-            this.disciplinesComboBox.Location = new System.Drawing.Point(417, 165);
+            this.disciplinesComboBox.Location = new System.Drawing.Point(426, 164);
             this.disciplinesComboBox.Name = "disciplinesComboBox";
             this.disciplinesComboBox.Size = new System.Drawing.Size(139, 21);
             this.disciplinesComboBox.TabIndex = 57;
             // 
-            // textBoxPublisher
-            // 
-            this.textBoxPublisher.Location = new System.Drawing.Point(417, 119);
-            this.textBoxPublisher.Name = "textBoxPublisher";
-            this.textBoxPublisher.Size = new System.Drawing.Size(140, 20);
-            this.textBoxPublisher.TabIndex = 55;
-            this.textBoxPublisher.Text = " ";
-            // 
             // textBoxISBN
             // 
-            this.textBoxISBN.Location = new System.Drawing.Point(69, 226);
-            this.textBoxISBN.Mask = "0000000000000";
+            this.textBoxISBN.Location = new System.Drawing.Point(92, 229);
+            this.textBoxISBN.Mask = "00000000000";
             this.textBoxISBN.Name = "textBoxISBN";
             this.textBoxISBN.Size = new System.Drawing.Size(84, 20);
             this.textBoxISBN.TabIndex = 53;
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(417, 77);
+            this.textBoxName.Location = new System.Drawing.Point(426, 76);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(140, 20);
             this.textBoxName.TabIndex = 51;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 77);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(161, 140);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 49;
-            this.pictureBox2.TabStop = false;
-            // 
             // buttonAdd
             // 
             this.buttonAdd.Depth = 0;
-            this.buttonAdd.Location = new System.Drawing.Point(278, 363);
+            this.buttonAdd.Location = new System.Drawing.Point(398, 354);
             this.buttonAdd.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Primary = true;
@@ -160,14 +129,14 @@
             // priceTextBox
             // 
             this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "Price", true));
-            this.priceTextBox.Location = new System.Drawing.Point(69, 301);
+            this.priceTextBox.Location = new System.Drawing.Point(92, 304);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.priceTextBox.Size = new System.Drawing.Size(51, 20);
             this.priceTextBox.TabIndex = 67;
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(417, 288);
+            this.maskedTextBox1.Location = new System.Drawing.Point(426, 287);
             this.maskedTextBox1.Mask = "0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(35, 20);
@@ -176,7 +145,7 @@
             // author_SignTextBox
             // 
             this.author_SignTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "Author_Sign", true));
-            this.author_SignTextBox.Location = new System.Drawing.Point(132, 264);
+            this.author_SignTextBox.Location = new System.Drawing.Point(155, 267);
             this.author_SignTextBox.Name = "author_SignTextBox";
             this.author_SignTextBox.Size = new System.Drawing.Size(100, 20);
             this.author_SignTextBox.TabIndex = 70;
@@ -187,7 +156,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(12, 227);
+            this.materialLabel1.Location = new System.Drawing.Point(35, 230);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(46, 18);
@@ -200,7 +169,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(3, 265);
+            this.materialLabel2.Location = new System.Drawing.Point(26, 268);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(117, 18);
@@ -213,7 +182,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(11, 301);
+            this.materialLabel3.Location = new System.Drawing.Point(34, 304);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(43, 18);
@@ -226,7 +195,7 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(326, 77);
+            this.materialLabel4.Location = new System.Drawing.Point(335, 76);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(84, 18);
@@ -239,7 +208,7 @@
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(334, 119);
+            this.materialLabel5.Location = new System.Drawing.Point(343, 118);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(76, 18);
@@ -252,7 +221,7 @@
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(328, 165);
+            this.materialLabel6.Location = new System.Drawing.Point(337, 164);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(81, 18);
@@ -265,7 +234,7 @@
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(358, 208);
+            this.materialLabel7.Location = new System.Drawing.Point(367, 207);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(49, 18);
@@ -278,7 +247,7 @@
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel8.Location = new System.Drawing.Point(370, 245);
+            this.materialLabel8.Location = new System.Drawing.Point(379, 244);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(35, 18);
@@ -291,12 +260,32 @@
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(326, 288);
+            this.materialLabel9.Location = new System.Drawing.Point(335, 287);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(77, 18);
             this.materialLabel9.TabIndex = 79;
             this.materialLabel9.Text = "Страницы";
+            // 
+            // publishersComboBox
+            // 
+            this.publishersComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.publishersComboBox.FormattingEnabled = true;
+            this.publishersComboBox.Location = new System.Drawing.Point(427, 116);
+            this.publishersComboBox.Name = "publishersComboBox";
+            this.publishersComboBox.Size = new System.Drawing.Size(139, 21);
+            this.publishersComboBox.TabIndex = 80;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureBox2.Location = new System.Drawing.Point(59, 76);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(161, 140);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 49;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // bookBindingSource
             // 
@@ -314,7 +303,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 432);
+            this.ClientSize = new System.Drawing.Size(614, 420);
+            this.Controls.Add(this.publishersComboBox);
             this.Controls.Add(this.materialLabel9);
             this.Controls.Add(this.materialLabel8);
             this.Controls.Add(this.materialLabel7);
@@ -331,14 +321,12 @@
             this.Controls.Add(this.comboBoxAuthors);
             this.Controls.Add(this.textBoxYear);
             this.Controls.Add(this.disciplinesComboBox);
-            this.Controls.Add(this.textBoxPublisher);
             this.Controls.Add(this.textBoxISBN);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.buttonDelete);
-            this.MaximumSize = new System.Drawing.Size(694, 432);
-            this.MinimumSize = new System.Drawing.Size(694, 432);
+            this.MaximumSize = new System.Drawing.Size(614, 420);
+            this.MinimumSize = new System.Drawing.Size(614, 420);
             this.Name = "AddBookForm";
             this.Text = "Добавить книгу";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -353,13 +341,11 @@
         #endregion
         private System.Windows.Forms.BindingSource bookBindingSource;
         private System.Windows.Forms.BindingSource authorBindingSource;
-        private MaterialSkin.Controls.MaterialRaisedButton buttonDelete;
         private MaterialSkin.Controls.MaterialRaisedButton buttonBack;
         private System.Windows.Forms.BindingSource modelBindingSource;
         private System.Windows.Forms.ComboBox comboBoxAuthors;
         private System.Windows.Forms.MaskedTextBox textBoxYear;
         private System.Windows.Forms.ComboBox disciplinesComboBox;
-        private System.Windows.Forms.TextBox textBoxPublisher;
         private System.Windows.Forms.MaskedTextBox textBoxISBN;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -376,5 +362,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private System.Windows.Forms.ComboBox publishersComboBox;
     }
 }

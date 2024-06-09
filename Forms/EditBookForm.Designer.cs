@@ -235,6 +235,8 @@
             this.Controls.Add(Заголовок);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.pictureBox1);
+            this.MaximumSize = new System.Drawing.Size(509, 369);
+            this.MinimumSize = new System.Drawing.Size(509, 369);
             this.Name = "EditBookForm";
             this.Text = "Редактирование книги";
             this.Load += new System.EventHandler(this.EditBookForm_Load);

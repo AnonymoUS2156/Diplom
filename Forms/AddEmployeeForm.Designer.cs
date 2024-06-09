@@ -270,6 +270,8 @@
             this.Controls.Add(this.secondNameTextBox);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.reservedBookIDTextBox);
+            this.MaximumSize = new System.Drawing.Size(728, 179);
+            this.MinimumSize = new System.Drawing.Size(728, 179);
             this.Name = "AddEmployeeForm";
             this.Text = "Добавить читателя";
             this.Load += new System.EventHandler(this.AddEmployeeForm_Load);

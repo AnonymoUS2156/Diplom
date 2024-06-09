@@ -70,6 +70,8 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(167, 51);
+            this.button1.MaximumSize = new System.Drawing.Size(110, 36);
+            this.button1.MinimumSize = new System.Drawing.Size(110, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 36);
             this.button1.TabIndex = 5;
@@ -109,6 +111,8 @@
             this.Controls.Add(nameLabel);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(classLabel);
+            this.MaximumSize = new System.Drawing.Size(309, 132);
+            this.MinimumSize = new System.Drawing.Size(309, 132);
             this.Name = "AddDisciplineForm";
             this.Text = "AddDisciplineForm";
             ((System.ComponentModel.ISupportInitialize)(this.disciplinesBindingSource)).EndInit();

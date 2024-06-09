@@ -33,13 +33,11 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.labelBookName = new MaterialSkin.Controls.MaterialLabel();
             this.labelPublisher = new MaterialSkin.Controls.MaterialLabel();
             this.labelAuthorScypher = new MaterialSkin.Controls.MaterialLabel();
             this.labelAuthor = new MaterialSkin.Controls.MaterialLabel();
-            this.labelISBN = new MaterialSkin.Controls.MaterialLabel();
             this.labelDiscipline = new MaterialSkin.Controls.MaterialLabel();
             this.buttonProps = new MaterialSkin.Controls.MaterialRaisedButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -73,7 +71,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(88, 30);
+            this.materialLabel2.Location = new System.Drawing.Point(82, 27);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(77, 19);
@@ -86,7 +84,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(80, 53);
+            this.materialLabel3.Location = new System.Drawing.Point(81, 53);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(130, 19);
@@ -99,25 +97,12 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(312, 1);
+            this.materialLabel4.Location = new System.Drawing.Point(308, 28);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(52, 19);
             this.materialLabel4.TabIndex = 7;
             this.materialLabel4.Text = "Автор";
-            // 
-            // materialLabel5
-            // 
-            this.materialLabel5.AutoSize = true;
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(322, 28);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(42, 19);
-            this.materialLabel5.TabIndex = 8;
-            this.materialLabel5.Text = "ISBN";
             // 
             // materialLabel6
             // 
@@ -138,7 +123,7 @@
             this.labelBookName.Depth = 0;
             this.labelBookName.Font = new System.Drawing.Font("Roboto", 11F);
             this.labelBookName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labelBookName.Location = new System.Drawing.Point(171, 3);
+            this.labelBookName.Location = new System.Drawing.Point(163, 3);
             this.labelBookName.MouseState = MaterialSkin.MouseState.HOVER;
             this.labelBookName.Name = "labelBookName";
             this.labelBookName.Size = new System.Drawing.Size(49, 19);
@@ -151,7 +136,7 @@
             this.labelPublisher.Depth = 0;
             this.labelPublisher.Font = new System.Drawing.Font("Roboto", 11F);
             this.labelPublisher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labelPublisher.Location = new System.Drawing.Point(171, 30);
+            this.labelPublisher.Location = new System.Drawing.Point(157, 27);
             this.labelPublisher.MouseState = MaterialSkin.MouseState.HOVER;
             this.labelPublisher.Name = "labelPublisher";
             this.labelPublisher.Size = new System.Drawing.Size(49, 19);
@@ -164,7 +149,7 @@
             this.labelAuthorScypher.Depth = 0;
             this.labelAuthorScypher.Font = new System.Drawing.Font("Roboto", 11F);
             this.labelAuthorScypher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labelAuthorScypher.Location = new System.Drawing.Point(216, 54);
+            this.labelAuthorScypher.Location = new System.Drawing.Point(209, 53);
             this.labelAuthorScypher.MouseState = MaterialSkin.MouseState.HOVER;
             this.labelAuthorScypher.Name = "labelAuthorScypher";
             this.labelAuthorScypher.Size = new System.Drawing.Size(49, 19);
@@ -177,25 +162,12 @@
             this.labelAuthor.Depth = 0;
             this.labelAuthor.Font = new System.Drawing.Font("Roboto", 11F);
             this.labelAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labelAuthor.Location = new System.Drawing.Point(370, 0);
+            this.labelAuthor.Location = new System.Drawing.Point(366, 27);
             this.labelAuthor.MouseState = MaterialSkin.MouseState.HOVER;
             this.labelAuthor.Name = "labelAuthor";
             this.labelAuthor.Size = new System.Drawing.Size(49, 19);
             this.labelAuthor.TabIndex = 13;
             this.labelAuthor.Text = "пусто";
-            // 
-            // labelISBN
-            // 
-            this.labelISBN.AutoSize = true;
-            this.labelISBN.Depth = 0;
-            this.labelISBN.Font = new System.Drawing.Font("Roboto", 11F);
-            this.labelISBN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labelISBN.Location = new System.Drawing.Point(370, 28);
-            this.labelISBN.MouseState = MaterialSkin.MouseState.HOVER;
-            this.labelISBN.Name = "labelISBN";
-            this.labelISBN.Size = new System.Drawing.Size(49, 19);
-            this.labelISBN.TabIndex = 14;
-            this.labelISBN.Text = "пусто";
             // 
             // labelDiscipline
             // 
@@ -213,7 +185,7 @@
             // buttonProps
             // 
             this.buttonProps.Depth = 0;
-            this.buttonProps.Location = new System.Drawing.Point(478, 3);
+            this.buttonProps.Location = new System.Drawing.Point(466, 3);
             this.buttonProps.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonProps.Name = "buttonProps";
             this.buttonProps.Primary = true;
@@ -227,23 +199,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.Controls.Add(this.buttonProps);
             this.Controls.Add(this.labelDiscipline);
-            this.Controls.Add(this.labelISBN);
             this.Controls.Add(this.labelAuthor);
             this.Controls.Add(this.labelAuthorScypher);
             this.Controls.Add(this.labelPublisher);
             this.Controls.Add(this.labelBookName);
             this.Controls.Add(this.materialLabel6);
-            this.Controls.Add(this.materialLabel5);
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "BookProps";
-            this.Size = new System.Drawing.Size(580, 79);
+            this.Size = new System.Drawing.Size(573, 79);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -257,13 +227,11 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialLabel labelBookName;
         private MaterialSkin.Controls.MaterialLabel labelPublisher;
         private MaterialSkin.Controls.MaterialLabel labelAuthorScypher;
         private MaterialSkin.Controls.MaterialLabel labelAuthor;
-        private MaterialSkin.Controls.MaterialLabel labelISBN;
         private MaterialSkin.Controls.MaterialLabel labelDiscipline;
         private MaterialSkin.Controls.MaterialRaisedButton buttonProps;
     }

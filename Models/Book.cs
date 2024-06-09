@@ -37,8 +37,6 @@ namespace Diploma.Models
         [StringLength(20)]
         public string Publishing_house { get; set; }
 
-        [StringLength(10)]
-        public string Scypher { get; set; }
 
         [StringLength(6)]
         public string Author_Sign { get; set; }

@@ -26,9 +26,8 @@ namespace Diploma
             labelBookName.Text = book.Name;
             labelAuthor.Text = book.Author.Abbreviation.ToString();
             labelPublisher.Text = book.Publisher.Name.ToString();
-            labelISBN.Text = book.ISBN.ToString();
-            labelDiscipline.Text = book.Disciplines.ToString();
-            labelAuthor.Text = book.Author_Sign.ToString();
+            labelDiscipline.Text = book.Disciplines1.Name.ToString();
+            labelAuthorScypher.Text = book.Author_Sign.ToString();
             pictureBox1.Image = Image.FromFile($@"{book.Photo}");
         }
 

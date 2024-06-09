@@ -20,9 +20,15 @@ namespace Diploma.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            disciplines.Class = Int32.Parse(maskedTextBoxClass.Text);
+            if (maskedTextBoxClass.Text == "")
+                disciplines.Class = null;
+            else disciplines.Class = Int32.Parse(maskedTextBoxClass.Text);
             disciplines.Name = nameTextBox.Text;
-
+            Model1 model1 = new Model1();
+            model1.Disciplines.Add(disciplines);
+            model1.SaveChanges();
+            MessageBox.Show("Данные успешно сохранены");
+            Close();
         }
     }
 }

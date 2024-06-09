@@ -27,6 +27,7 @@ namespace Diploma.Forms
 
         private Model1 model = MainForm.model;
         private Author author = new Author();
+        public Book book = new Book();
         private void buttonAddBook_Click(object sender, EventArgs e)
         {
             author.Surname = surnameTextBox.Text;
@@ -35,7 +36,7 @@ namespace Diploma.Forms
             author.Birthday = birthdayDateTimePicker.Value ;
             author.Gender = genderComboBox.SelectedIndex;
             author.Abbreviation = abbreviationTextBox.Text;
-            model.Author.Add(author);
+            model.Book.Add(book);
             model.SaveChanges();
             MessageBox.Show("Данные сохранены");
             Close();

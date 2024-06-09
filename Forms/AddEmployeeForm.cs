@@ -22,7 +22,7 @@ namespace Diploma.Forms
         private Model1 model = MainForm.model;
         private Employee emp = new Employee();
         private List<Employee> emps = new List<Employee>();
-        private List<Department> dep = new List<Department>(); 
+        private List<Department> dep = new List<Department>();
         private void LoadComboBox()
         {
             nameComboBox.Items.Clear();
@@ -105,5 +105,7 @@ namespace Diploma.Forms
                 reservedBookIDTextBox.Visible = false;
             }
         }
+
+
     }
 }

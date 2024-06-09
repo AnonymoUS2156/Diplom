@@ -17,13 +17,13 @@ namespace Diploma.Models
 
         public int ID { get; set; }
 
-        [StringLength(30)]
+        [StringLength(50)]
         public string Name { get; set; }
 
         [StringLength(50)]
         public string Adress { get; set; }
 
-        [StringLength(30)]
+        [StringLength(50)]
         public string Site { get; set; }
 
         [StringLength(30)]

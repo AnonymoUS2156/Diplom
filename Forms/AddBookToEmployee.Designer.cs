@@ -65,6 +65,8 @@
             this.ClientSize = new System.Drawing.Size(287, 69);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
+            this.MaximumSize = new System.Drawing.Size(303, 108);
+            this.MinimumSize = new System.Drawing.Size(303, 108);
             this.Name = "AddBookToEmployee";
             this.Text = "AddBookToEmployee";
             this.ResumeLayout(false);
