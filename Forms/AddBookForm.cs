@@ -32,6 +32,7 @@ namespace Diploma
         private List<Publisher> publishers = new List<Publisher>();
         MainForm main = new MainForm();
         private string newFileName;
+        private string destinationFilePath;
         private void buttonBack_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -124,9 +125,7 @@ namespace Diploma
                     publishersComboBox.SelectedIndex = i;
             }
         }
-
-
-        private void pictureBox2_Click_1(object sender, EventArgs e)
+        public void AddPicture()
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -147,7 +146,7 @@ namespace Diploma
                     // Определение пути для копирования файла с новым именем
                     newFileName = $"pict{imageCounter++}{Path.GetExtension(sourceFilePath)}";
 
-                    string destinationFilePath = Path.Combine(picturesFolder, newFileName);
+                    destinationFilePath = Path.Combine(picturesFolder, newFileName);
 
 
                     // Копирование файла в папку "pictures"
@@ -161,6 +160,20 @@ namespace Diploma
                     MessageBox.Show($"Изображение успешно загружено и сохранено как {newFileName} в папке \"pictures\".");
                 }
             }
+        }
+        private void pictureCleaner()
+        {
+            if (pictureBox2.Image != null)
+            {
+                pictureBox2.Image.Dispose();
+                File.Delete(destinationFilePath);
+            }
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            pictureCleaner();
+            AddPicture();
         }
         private int GetNextPictureIndex(string picturesFolder)
         {
@@ -181,6 +194,7 @@ namespace Diploma
         }
         private void buttonBack_Click_1(object sender, EventArgs e)
         {
+            pictureCleaner();
             Close();
         }
     }

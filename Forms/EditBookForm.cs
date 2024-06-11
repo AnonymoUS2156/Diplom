@@ -170,5 +170,11 @@ namespace Diploma.Forms
         {
             Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            AddBookForm addBookForm = new AddBookForm();
+            addBookForm.AddPicture();
+        }
     }
 }

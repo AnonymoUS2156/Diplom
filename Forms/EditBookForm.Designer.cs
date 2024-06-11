@@ -35,9 +35,7 @@
             System.Windows.Forms.Label nameLabel;
             System.Windows.Forms.Label yearLabel1;
             System.Windows.Forms.Label Заголовок;
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxISBN = new System.Windows.Forms.MaskedTextBox();
-            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.disciplinesComboBox = new System.Windows.Forms.ComboBox();
             this.textBoxYear = new System.Windows.Forms.MaskedTextBox();
             this.buttonBack = new System.Windows.Forms.Button();
@@ -45,8 +43,10 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.comboBoxAuthors = new System.Windows.Forms.ComboBox();
-            this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxPublisher = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             iSBNLabel = new System.Windows.Forms.Label();
             nameLabel1 = new System.Windows.Forms.Label();
             disciplinesLabel1 = new System.Windows.Forms.Label();
@@ -112,16 +112,6 @@
             Заголовок.TabIndex = 2;
             Заголовок.Text = "Заголовок";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 70);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(161, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // textBoxISBN
             // 
             this.textBoxISBN.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "ISBN", true));
@@ -130,10 +120,6 @@
             this.textBoxISBN.Name = "textBoxISBN";
             this.textBoxISBN.Size = new System.Drawing.Size(84, 20);
             this.textBoxISBN.TabIndex = 5;
-            // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataSource = typeof(Diploma.Models.Book);
             // 
             // disciplinesComboBox
             // 
@@ -201,10 +187,6 @@
             this.comboBoxAuthors.Size = new System.Drawing.Size(139, 21);
             this.comboBoxAuthors.TabIndex = 17;
             // 
-            // modelBindingSource
-            // 
-            this.modelBindingSource.DataSource = typeof(Diploma.Models.Model1);
-            // 
             // comboBoxPublisher
             // 
             this.comboBoxPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -213,6 +195,25 @@
             this.comboBoxPublisher.Name = "comboBoxPublisher";
             this.comboBoxPublisher.Size = new System.Drawing.Size(139, 21);
             this.comboBoxPublisher.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 70);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(161, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataSource = typeof(Diploma.Models.Book);
+            // 
+            // modelBindingSource
+            // 
+            this.modelBindingSource.DataSource = typeof(Diploma.Models.Model1);
             // 
             // EditBookForm
             // 
