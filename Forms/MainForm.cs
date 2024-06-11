@@ -22,11 +22,11 @@ namespace Diploma
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue400, Accent.LightBlue100, TextShade.WHITE);
-
+            
         }
         public static Model1 model = new Model1();
         List<Book> books = model.Book.ToList();
-        //AuthArchivist authArchivist ;
+        AuthArchivist authArchivist = new AuthArchivist();
         public void Load1()
         {
             flowLayoutPanel1.Controls.Clear();
@@ -45,7 +45,6 @@ namespace Diploma
             comboBoxSort.DataSource = GetProp(new Book());
             comboBoxSort.SelectedIndex = 0;
             comboBoxAtributesSort.SelectedIndex = 0;
-            
             Load1();
         }
         private List<string> GetProp<T>(T o)
@@ -72,18 +71,11 @@ namespace Diploma
         {
             Sorting();
         }
-        //private void AddUSerButt(AuthArchivist authArchivist)
-        //{
-        //    if(authArchivist.Role == 1)
-        //    {
-        //        addUserButton.Visible = true ;
-        //    }
-        //    else
-        //    {
-        //        addUserButton.Visible = false;
-        //    }
+        private void AddUSerButt(AuthArchivist ID)
+        {
+           
 
-        //}
+        }
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
         {
 
@@ -147,8 +139,8 @@ namespace Diploma
 
         private void addUserButton_Click(object sender, EventArgs e)
         {
-            AddEmployeeForm addEmployeeForm = new AddEmployeeForm();
-            addEmployeeForm.ShowDialog(this);
+            UserAuthForm userAuthForm = new UserAuthForm();
+            userAuthForm.ShowDialog(this);
         }
 
         private void materialRaisedButton1_Click_1(object sender, EventArgs e)

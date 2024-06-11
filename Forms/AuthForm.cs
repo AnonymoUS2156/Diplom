@@ -44,6 +44,7 @@ namespace Diploma
             authArchivist = model1.AuthArchivist.FirstOrDefault(item => item.Login == loginTextBox.Text && item.Password == passwordTextBox.Text);
 
             
+            
             if (authArchivist == null)
             {
                 MessageBox.Show("Не найден!");
@@ -52,7 +53,7 @@ namespace Diploma
             Hide();
             MainForm mainForm = new MainForm();
             mainForm.ShowDialog();
-            
+
         }
     }
 }

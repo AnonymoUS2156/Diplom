@@ -38,10 +38,12 @@
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.addUserButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 77);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -111,7 +113,7 @@
             // buttonAddDicipline
             // 
             this.buttonAddDicipline.Depth = 0;
-            this.buttonAddDicipline.Location = new System.Drawing.Point(730, 128);
+            this.buttonAddDicipline.Location = new System.Drawing.Point(668, 126);
             this.buttonAddDicipline.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonAddDicipline.Name = "buttonAddDicipline";
             this.buttonAddDicipline.Primary = true;
@@ -137,14 +139,14 @@
             // addUserButton
             // 
             this.addUserButton.Depth = 0;
-            this.addUserButton.Location = new System.Drawing.Point(595, 125);
+            this.addUserButton.Location = new System.Drawing.Point(730, 177);
             this.addUserButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.addUserButton.Name = "addUserButton";
             this.addUserButton.Primary = true;
             this.addUserButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.addUserButton.Size = new System.Drawing.Size(124, 38);
             this.addUserButton.TabIndex = 10;
-            this.addUserButton.Text = "Добавить пользователя";
+            this.addUserButton.Text = "Добавить архивариуса";
             this.addUserButton.UseVisualStyleBackColor = true;
             this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
             // 
@@ -161,6 +163,13 @@
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
             this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click_1);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(591, 66);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(266, 158);
+            this.panel1.TabIndex = 12;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,6 +185,7 @@
             this.Controls.Add(this.comboBoxSort);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(859, 450);
             this.MinimumSize = new System.Drawing.Size(859, 450);
             this.Name = "MainForm";
@@ -198,5 +208,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
         private MaterialSkin.Controls.MaterialRaisedButton addUserButton;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

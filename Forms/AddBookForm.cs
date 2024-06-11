@@ -70,14 +70,14 @@ namespace Diploma
         }
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            Loader();
-            model.Book.Add(book);
-            model.SaveChanges();
 
 
             MessageBox.Show("Данные успешно сохранены");
             try
             {
+                Loader();
+                model.Book.Add(book);
+                model.SaveChanges();
             }
             catch (Exception ex)
             {
@@ -88,6 +88,8 @@ namespace Diploma
 
         void Loader()
         {
+            BookProps bookProps = new BookProps();
+            bookProps.Fill(book);
             book.Name = textBoxName.Text;
             book.Author_Sign = author_SignTextBox.Text;
             book.Price = decimal.Parse(priceTextBox.Text);
@@ -104,7 +106,7 @@ namespace Diploma
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Не верно введен год! Проверьте диапозон с 0 до 2025!");
+                MessageBox.Show("Не верно введен год! Проверьте диапозон с 0 до 2025!", ex.Message);
             }
             for (int i = 0; i < authors.Count; i++)
             {

@@ -38,7 +38,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxISBN = new System.Windows.Forms.MaskedTextBox();
             this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.textBoxPublisher = new System.Windows.Forms.TextBox();
             this.disciplinesComboBox = new System.Windows.Forms.ComboBox();
             this.textBoxYear = new System.Windows.Forms.MaskedTextBox();
             this.buttonBack = new System.Windows.Forms.Button();
@@ -47,6 +46,7 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.comboBoxAuthors = new System.Windows.Forms.ComboBox();
             this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBoxPublisher = new System.Windows.Forms.ComboBox();
             iSBNLabel = new System.Windows.Forms.Label();
             nameLabel1 = new System.Windows.Forms.Label();
             disciplinesLabel1 = new System.Windows.Forms.Label();
@@ -99,9 +99,9 @@
             yearLabel1.AutoSize = true;
             yearLabel1.Location = new System.Drawing.Point(292, 255);
             yearLabel1.Name = "yearLabel1";
-            yearLabel1.Size = new System.Drawing.Size(32, 13);
+            yearLabel1.Size = new System.Drawing.Size(28, 13);
             yearLabel1.TabIndex = 14;
-            yearLabel1.Text = "Year:";
+            yearLabel1.Text = "Год:";
             // 
             // Заголовок
             // 
@@ -134,15 +134,6 @@
             // bookBindingSource
             // 
             this.bookBindingSource.DataSource = typeof(Diploma.Models.Book);
-            // 
-            // textBoxPublisher
-            // 
-            this.textBoxPublisher.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "Publisher.Name", true));
-            this.textBoxPublisher.Location = new System.Drawing.Point(330, 125);
-            this.textBoxPublisher.Name = "textBoxPublisher";
-            this.textBoxPublisher.Size = new System.Drawing.Size(140, 20);
-            this.textBoxPublisher.TabIndex = 7;
-            this.textBoxPublisher.Text = " ";
             // 
             // disciplinesComboBox
             // 
@@ -214,6 +205,15 @@
             // 
             this.modelBindingSource.DataSource = typeof(Diploma.Models.Model1);
             // 
+            // comboBoxPublisher
+            // 
+            this.comboBoxPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPublisher.FormattingEnabled = true;
+            this.comboBoxPublisher.Location = new System.Drawing.Point(331, 125);
+            this.comboBoxPublisher.Name = "comboBoxPublisher";
+            this.comboBoxPublisher.Size = new System.Drawing.Size(139, 21);
+            this.comboBoxPublisher.TabIndex = 10;
+            // 
             // EditBookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,9 +227,9 @@
             this.Controls.Add(this.textBoxYear);
             this.Controls.Add(nameLabel);
             this.Controls.Add(disciplinesLabel1);
+            this.Controls.Add(this.comboBoxPublisher);
             this.Controls.Add(this.disciplinesComboBox);
             this.Controls.Add(nameLabel1);
-            this.Controls.Add(this.textBoxPublisher);
             this.Controls.Add(iSBNLabel);
             this.Controls.Add(this.textBoxISBN);
             this.Controls.Add(Заголовок);
@@ -253,7 +253,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.BindingSource bookBindingSource;
         private System.Windows.Forms.MaskedTextBox textBoxISBN;
-        private System.Windows.Forms.TextBox textBoxPublisher;
         private System.Windows.Forms.ComboBox disciplinesComboBox;
         private System.Windows.Forms.MaskedTextBox textBoxYear;
         private System.Windows.Forms.Button buttonBack;
@@ -262,5 +261,6 @@
         private System.Windows.Forms.BindingSource modelBindingSource;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.ComboBox comboBoxAuthors;
+        private System.Windows.Forms.ComboBox comboBoxPublisher;
     }
 }

@@ -21,17 +21,33 @@ namespace Diploma
         }
         public void Fill(Book book)
         {
-            
             _book = book;
-            labelBookName.Text = book.Name;
-            labelAuthor.Text = book.Author.Abbreviation.ToString();
-            labelPublisher.Text = book.Publisher.Name.ToString();
-            labelDiscipline.Text = book.Disciplines1.Name.ToString();
-            labelAuthorScypher.Text = book.Author_Sign.ToString();
-            pictureBox1.Image = Image.FromFile($@"{book.Photo}");
+            var assignments = new Action[]
+            {   
+                () => { if (book?.Name != null) labelBookName.Text = book.Name; },
+                () => { if (book?.Author?.Abbreviation != null) labelAuthor.Text = book.Author.Abbreviation.ToString(); },
+                () => { if (book?.Publisher?.Name != null) labelPublisher.Text = book.Publisher.Name.ToString(); },
+                () => { if (book?.Disciplines1?.Name != null) labelDiscipline.Text = book.Disciplines1.Name.ToString(); },
+                () => { if (book?.Author_Sign != null) labelAuthorScypher.Text = book.Author_Sign.ToString(); },
+                () => { if (book?.Photo != null) pictureBox1.Image = Image.FromFile($@"{book.Photo}"); }
+
+            };
+
+            foreach (var assign in assignments)
+            {
+                try
+                {
+                    assign();
+                }
+                catch
+                {   
+                    continue;
+                }
+            }
+            
         }
 
-        
+
 
         private void buttonProps_Click_1(object sender, EventArgs e)
         {

@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.buttonEnter = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loginTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.authArchivistBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.authArchivistBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonEnter
@@ -52,16 +52,6 @@
             this.buttonEnter.Text = "Войти";
             this.buttonEnter.UseVisualStyleBackColor = true;
             this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click_1);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Diploma.Properties.Resources.w0n7cislc3lpalnnhz6yo1qgq1baqbr3;
-            this.pictureBox1.Location = new System.Drawing.Point(312, 76);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 137);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // loginTextBox
             // 
@@ -109,6 +99,16 @@
             // 
             this.authArchivistBindingSource.DataSource = typeof(Diploma.Models.AuthArchivist);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Diploma.Properties.Resources.w0n7cislc3lpalnnhz6yo1qgq1baqbr3;
+            this.pictureBox1.Location = new System.Drawing.Point(312, 76);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(165, 137);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // AuthForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -123,8 +123,8 @@
             this.MaximumSize = new System.Drawing.Size(800, 458);
             this.MinimumSize = new System.Drawing.Size(800, 458);
             this.Name = "AuthForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.authArchivistBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

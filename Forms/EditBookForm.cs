@@ -17,6 +17,7 @@ namespace Diploma.Forms
         private List<Author> authors = new List<Author>();
         private List<Disciplines> disciplines = new List<Disciplines>();
 
+        private List<Publisher> publishers = new List<Publisher>();
         public EditBookForm(Book book)
         {
             InitializeComponent();
@@ -33,34 +34,68 @@ namespace Diploma.Forms
         {
             disciplinesComboBox.Items.Clear();
             comboBoxAuthors.Items.Clear();
+            comboBoxPublisher.Items.Clear();
 
             authors = model.Author.ToList();
             disciplines = model.Disciplines.ToList();
+            publishers = model.Publisher.ToList();
+            
 
             foreach (var author in authors)
                 comboBoxAuthors.Items.Add(author.Abbreviation);
             foreach (var dis in disciplines)
                 disciplinesComboBox.Items.Add(dis.Name);
+            foreach (var publisher in publishers)
+                comboBoxPublisher.Items.Add(publisher.Name);
         }
 
         private void Fill(Book book)
         {
             thisbook = book;
-            textBoxName.Text = book.Name;
-            textBoxPublisher.Text = book.Publisher.Name;
-            textBoxISBN.Text = book.ISBN.ToString();
-            textBoxYear.Text = book.Year.ToString();
 
-            pictureBox1.Image = Image.FromFile($@"{book.Photo}");
-            for (int i = 0; i < authors.Count; i++)
+            var assignments = new Action[]
             {
-                if (book.AuthorID == authors[i].ID)
-                    comboBoxAuthors.SelectedIndex = i;
+                () => { if (book?.Name != null) textBoxName.Text = book.Name; },
+                () => { if (book?.ISBN != null) textBoxISBN.Text = book.ISBN.ToString(); },
+                () => { textBoxYear.Text = book.Year.ToString(); },
+                () => { if (book?.Photo != null) pictureBox1.Image = Image.FromFile($@"{book.Photo}"); },
+                () =>
+                {
+                    for (int i = 0; i < authors.Count; i++)
+                    {
+                        if (book?.AuthorID == authors[i].ID)
+                        comboBoxAuthors.SelectedIndex = i;
+                    }
+                },
+            () =>
+            {
+                for (int i = 0; i < disciplines.Count; i++)
+                {
+                    if (book?.Disciplines == disciplines[i].ID)
+                        disciplinesComboBox.SelectedIndex = i;
+                }
+            },
+            () =>
+            {
+                for (int i = 0; i < publishers.Count; i++)
+                {
+                    if (book?.PublisherID == publishers[i].ID)
+                        comboBoxPublisher.SelectedIndex = i;
+                }
             }
-            for (int i = 0; i < disciplines.Count; i++)
+        };
+
+            foreach (var assign in assignments)
             {
-                if (book.Disciplines == disciplines[i].ID)
-                    disciplinesComboBox.SelectedIndex = i;
+                try
+                {
+                    assign();
+                }
+                catch (Exception)
+                {
+                    // Handle specific logging if needed
+                    continue;
+                }
             }
         }
 
@@ -94,7 +129,7 @@ namespace Diploma.Forms
             try
             {
                 thisbook.Name = textBoxName.Text;
-                thisbook.Publisher.Name = textBoxPublisher.Text;
+                thisbook.Publisher = publishers[comboBoxPublisher.SelectedIndex];
                 thisbook.ISBN = textBoxISBN.Text;
 
                 if (!int.TryParse(textBoxYear.Text, out int year))

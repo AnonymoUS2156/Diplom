@@ -22,5 +22,8 @@ namespace Diploma.Models
         public int? Role { get; set; }
 
         public virtual Roles Roles { get; set; }
+
+        [StringLength(50)]
+        public string Person { get; set; }
     }
 }
