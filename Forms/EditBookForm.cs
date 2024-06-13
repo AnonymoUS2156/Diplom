@@ -117,6 +117,7 @@ namespace Diploma.Forms
                 UpdateBook();
                 model.SaveChanges();
                 MessageBox.Show("Данные успешно обновлены");
+                Close();
             }
             catch (Exception ex)
             {

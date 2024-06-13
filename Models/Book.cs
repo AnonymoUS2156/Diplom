@@ -34,9 +34,6 @@ namespace Diploma.Models
         [Column(TypeName = "money")]
         public decimal? Price { get; set; }
 
-        [StringLength(20)]
-        public string Publishing_house { get; set; }
-
 
         [StringLength(6)]
         public string Author_Sign { get; set; }
