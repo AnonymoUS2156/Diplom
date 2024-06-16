@@ -26,7 +26,6 @@ namespace Diploma
         }
         public static Model1 model = new Model1();
         List<Book> books = model.Book.ToList();
-        AuthArchivist authArchivist = new AuthArchivist();
         public void Load1()
         {
             flowLayoutPanel1.Controls.Clear();
@@ -39,9 +38,8 @@ namespace Diploma
             }
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        public void MainForm_Load(object sender, EventArgs e)
         {
-            //AddUSerButt(authArchivist);
             comboBoxSort.DataSource = GetProp(new Book());
             comboBoxSort.SelectedIndex = 0;
             comboBoxAtributesSort.SelectedIndex = 0;
@@ -71,11 +69,7 @@ namespace Diploma
         {
             Sorting();
         }
-        private void AddUSerButt(AuthArchivist ID)
-        {
-           
-
-        }
+        
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
         {
 
@@ -94,23 +88,20 @@ namespace Diploma
 
         }
 
-        
-
-        
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
-            //AddDisciplineForm addDisciplineForm = new AddDisciplineForm();
-            //addDisciplineForm.ShowDialog();
             ReadersForm readersForm = new ReadersForm();
             readersForm.ShowDialog();
         }
 
         private void buttonAddBook_Click(object sender, EventArgs e)
         {
+            MainForm mainForm = new MainForm();
+            mainForm.Close(); 
             AddBookForm addBookForm = new AddBookForm();
             addBookForm.ShowDialog();
+            Load1();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -129,24 +120,33 @@ namespace Diploma
         {
             AddAuthorForm addAuthorForm = new AddAuthorForm();
             addAuthorForm.ShowDialog(this);
+            Load1();
         }
 
         private void buttonAddDicipline_Click(object sender, EventArgs e)
         {
             AddDisciplineForm addDisciplineForm = new AddDisciplineForm();
             addDisciplineForm.ShowDialog();
+            Load1();
         }
 
         private void addUserButton_Click(object sender, EventArgs e)
         {
             UserAuthForm userAuthForm = new UserAuthForm();
             userAuthForm.ShowDialog(this);
+            Load1();
         }
 
         private void materialRaisedButton1_Click_1(object sender, EventArgs e)
         {
             AddPublisherForm addPublisherForm = new AddPublisherForm();
             addPublisherForm.ShowDialog(this);
+            Load1();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

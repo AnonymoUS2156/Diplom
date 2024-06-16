@@ -39,16 +39,16 @@
             this.buttonBack = new MaterialSkin.Controls.MaterialRaisedButton();
             this.buttonAddBook = new MaterialSkin.Controls.MaterialRaisedButton();
             this.abbreviationTextBox = new System.Windows.Forms.TextBox();
+            this.authorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.genderComboBox = new System.Windows.Forms.ComboBox();
             this.birthdayDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.surnameTextBox = new System.Windows.Forms.TextBox();
             this.secondNameTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.authorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.authorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,15 +125,16 @@
             this.abbreviationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.authorBindingSource, "Abbreviation", true));
             this.abbreviationTextBox.Name = "abbreviationTextBox";
             // 
+            // authorBindingSource
+            // 
+            this.authorBindingSource.DataSource = typeof(Diploma.Models.Author);
+            // 
             // genderComboBox
             // 
             resources.ApplyResources(this.genderComboBox, "genderComboBox");
             this.genderComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.authorBindingSource, "Gender", true));
             this.genderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genderComboBox.FormattingEnabled = true;
-            this.genderComboBox.Items.AddRange(new object[] {
-            resources.GetString("genderComboBox.Items"),
-            resources.GetString("genderComboBox.Items1")});
             this.genderComboBox.Name = "genderComboBox";
             // 
             // birthdayDateTimePicker
@@ -168,10 +169,6 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // authorBindingSource
-            // 
-            this.authorBindingSource.DataSource = typeof(Diploma.Models.Author);
-            // 
             // bookBindingSource
             // 
             this.bookBindingSource.DataSource = typeof(Diploma.Models.Book);
@@ -196,8 +193,8 @@
             this.Controls.Add(this.secondNameTextBox);
             this.Controls.Add(this.nameTextBox);
             this.Name = "AddAuthorForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.authorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

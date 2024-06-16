@@ -51,7 +51,8 @@ namespace Diploma
 
         private void buttonProps_Click_1(object sender, EventArgs e)
         {
-
+            MainForm mainForm = new MainForm();
+            mainForm.Close();
             EditBookForm editBookForm = new EditBookForm(_book);
             editBookForm.ShowDialog();
         }

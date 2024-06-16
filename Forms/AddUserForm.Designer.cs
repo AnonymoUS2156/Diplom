@@ -35,25 +35,26 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.addButton = new System.Windows.Forms.Button();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 61);
+            this.textBox1.Location = new System.Drawing.Point(125, 140);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(260, 20);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 96);
+            this.textBox2.Location = new System.Drawing.Point(125, 175);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(260, 20);
             this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(100, 24);
+            this.textBox3.Location = new System.Drawing.Point(125, 103);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(260, 20);
             this.textBox3.TabIndex = 2;
@@ -64,7 +65,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(52, 24);
+            this.materialLabel1.Location = new System.Drawing.Point(77, 103);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(42, 19);
@@ -77,7 +78,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(41, 62);
+            this.materialLabel2.Location = new System.Drawing.Point(66, 141);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(53, 19);
@@ -90,7 +91,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(32, 97);
+            this.materialLabel3.Location = new System.Drawing.Point(57, 176);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(62, 19);
@@ -99,7 +100,7 @@
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(146, 133);
+            this.addButton.Location = new System.Drawing.Point(171, 212);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(156, 27);
             this.addButton.TabIndex = 6;
@@ -107,11 +108,25 @@
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(167, 81);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(127, 19);
+            this.materialLabel4.TabIndex = 7;
+            this.materialLabel4.Text = "Введите данные";
+            // 
             // AddUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 180);
+            this.ClientSize = new System.Drawing.Size(468, 289);
+            this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel2);
@@ -119,10 +134,10 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.MaximumSize = new System.Drawing.Size(429, 219);
-            this.MinimumSize = new System.Drawing.Size(429, 219);
+            this.MaximumSize = new System.Drawing.Size(468, 289);
+            this.MinimumSize = new System.Drawing.Size(468, 289);
             this.Name = "AddUserForm";
-            this.Text = "AddUserForm";
+            this.Text = "Добавить пользователя";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,5 +152,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.Button addButton;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
     }
 }

@@ -73,12 +73,16 @@ namespace Diploma
         {
 
 
-            MessageBox.Show("Данные успешно сохранены");
             try
             {
-                Loader();
+                Loader(); 
                 model.Book.Add(book);
                 model.SaveChanges();
+                MessageBox.Show("Данные успешно сохранены");
+                Close();
+                MainForm mainForm = new MainForm();
+                mainForm.Load1();
+
             }
             catch (Exception ex)
             {
@@ -196,6 +200,12 @@ namespace Diploma
         {
             pictureCleaner();
             Close();
+        }
+
+        private void AddBookForm_Load(object sender, EventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            mainForm.Close();
         }
     }
 }

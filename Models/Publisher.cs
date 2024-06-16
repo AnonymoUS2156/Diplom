@@ -29,7 +29,8 @@ namespace Diploma.Models
         [StringLength(30)]
         public string Email { get; set; }
 
-        public int? Phone { get; set; }
+        [StringLength(17)]
+        public string Phone { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Book> Book { get; set; }

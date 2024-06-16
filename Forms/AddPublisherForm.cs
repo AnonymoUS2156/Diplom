@@ -18,6 +18,7 @@ namespace Diploma.Forms
     {
         private Model1 model1 = MainForm.model;
         Publisher publisher = new Publisher();
+
         public AddPublisherForm()
         {
             InitializeComponent();
@@ -26,19 +27,44 @@ namespace Diploma.Forms
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue400, Accent.LightBlue100, TextShade.WHITE);
         }
-        
 
         private void buttonAddEmployee_Click(object sender, EventArgs e)
         {
-            publisher.Name = nameTextBox.Text;
-            publisher.Site = siteTextBox.Text;
-            publisher.Email = emailTextBox.Text;
-            publisher.Phone = Int32.Parse(phoneMaskedTextBox.Text);
-            publisher.Adress = adressTextBox.Text;
+            try
+            {
+                if (string.IsNullOrWhiteSpace(nameTextBox.Text))
+                {
+                    throw new ArgumentNullException("Name field cannot be empty.");
+                }
 
-            model1.Publisher.Add(publisher);
-            model1.SaveChanges();
-            MessageBox.Show("Данные успешно сохранены");
+                publisher.Name = nameTextBox.Text;
+                publisher.Site = siteTextBox.Text;
+                publisher.Email = emailTextBox.Text;
+                publisher.Phone = phoneMaskedTextBox.Text;
+                publisher.Adress = adressTextBox.Text;
+
+                model1.Publisher.Add(publisher);
+                model1.SaveChanges();
+
+                MessageBox.Show("Данные успешно сохранены");
+            }
+            catch (ArgumentNullException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Operation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An unexpected error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

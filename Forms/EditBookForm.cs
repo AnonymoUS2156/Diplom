@@ -18,6 +18,7 @@ namespace Diploma.Forms
         private List<Disciplines> disciplines = new List<Disciplines>();
 
         private List<Publisher> publishers = new List<Publisher>();
+        MainForm mainForm = new MainForm();
         public EditBookForm(Book book)
         {
             InitializeComponent();
@@ -93,7 +94,6 @@ namespace Diploma.Forms
                 }
                 catch (Exception)
                 {
-                    // Handle specific logging if needed
                     continue;
                 }
             }
@@ -101,14 +101,21 @@ namespace Diploma.Forms
 
         private void EditBookForm_Load(object sender, EventArgs e)
         {
-
+            MainForm mainForm = new MainForm();
+            mainForm.Close();
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
+            MainForm mainForm = new MainForm();
             model.Book.Remove(thisbook);
             model.SaveChanges();
+            MessageBox.Show("Книга успешно удалена");
+            Close();
+            mainForm.Load1();
         }
+        
+        
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
@@ -117,7 +124,8 @@ namespace Diploma.Forms
                 UpdateBook();
                 model.SaveChanges();
                 MessageBox.Show("Данные успешно обновлены");
-                Close();
+                
+                mainForm.Close();
             }
             catch (Exception ex)
             {

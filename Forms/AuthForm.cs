@@ -24,10 +24,7 @@ namespace Diploma
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue400, Accent.LightBlue100, TextShade.WHITE);
             MainForm mainForm = new MainForm();
         }
-        
-
-        
-
+       
         private void buttonEnter_Click_1(object sender, EventArgs e)
         {
             Model1 model1 = new Model1();

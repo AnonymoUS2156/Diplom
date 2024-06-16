@@ -329,6 +329,7 @@
             this.MinimumSize = new System.Drawing.Size(614, 420);
             this.Name = "AddBookForm";
             this.Text = "Добавить книгу";
+            this.Load += new System.EventHandler(this.AddBookForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.authorBindingSource)).EndInit();

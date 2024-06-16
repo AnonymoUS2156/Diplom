@@ -213,7 +213,7 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "BookProps";
-            this.Size = new System.Drawing.Size(573, 79);
+            this.Size = new System.Drawing.Size(560, 79);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

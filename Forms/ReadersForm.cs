@@ -39,6 +39,7 @@ namespace Diploma.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+            Load1();
         }
 
         private void ReadersForm_Load(object sender, EventArgs e)
@@ -49,7 +50,9 @@ namespace Diploma.Forms
         private void buttonAddReader_Click(object sender, EventArgs e)
         {
             AddEmployeeForm amf = new AddEmployeeForm();
+            
             amf.ShowDialog();
+            Load1();
         }
     }
 }

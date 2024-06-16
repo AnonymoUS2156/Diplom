@@ -116,7 +116,7 @@
             // 
             this.textBoxISBN.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookBindingSource, "ISBN", true));
             this.textBoxISBN.Location = new System.Drawing.Point(72, 219);
-            this.textBoxISBN.Mask = "0000000000000";
+            this.textBoxISBN.Mask = "00000000000";
             this.textBoxISBN.Name = "textBoxISBN";
             this.textBoxISBN.Size = new System.Drawing.Size(84, 20);
             this.textBoxISBN.TabIndex = 5;

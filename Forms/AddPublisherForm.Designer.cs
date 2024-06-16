@@ -69,6 +69,7 @@
             this.buttonBack.TabIndex = 58;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // materialLabel5
             // 
@@ -200,7 +201,7 @@
             this.MaximumSize = new System.Drawing.Size(301, 301);
             this.MinimumSize = new System.Drawing.Size(301, 301);
             this.Name = "AddPublisherForm";
-            this.Text = "AddPublisherForm";
+            this.Text = "Добавить издателя";
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

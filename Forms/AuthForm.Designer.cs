@@ -34,10 +34,10 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.authArchivistBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.authArchivistBindingSource)).BeginInit();
+            this.authArchivistBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.authArchivistBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonEnter
@@ -65,7 +65,9 @@
             // 
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.authArchivistBindingSource, "Password", true));
             this.passwordTextBox.Location = new System.Drawing.Point(264, 281);
+            this.passwordTextBox.MaxLength = 100;
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(276, 20);
             this.passwordTextBox.TabIndex = 6;
             // 
@@ -95,10 +97,6 @@
             this.materialLabel2.TabIndex = 8;
             this.materialLabel2.Text = "Пароль";
             // 
-            // authArchivistBindingSource
-            // 
-            this.authArchivistBindingSource.DataSource = typeof(Diploma.Models.AuthArchivist);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Diploma.Properties.Resources.w0n7cislc3lpalnnhz6yo1qgq1baqbr3;
@@ -108,6 +106,10 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // authArchivistBindingSource
+            // 
+            this.authArchivistBindingSource.DataSource = typeof(Diploma.Models.AuthArchivist);
             // 
             // AuthForm
             // 
@@ -123,8 +125,8 @@
             this.MaximumSize = new System.Drawing.Size(800, 458);
             this.MinimumSize = new System.Drawing.Size(800, 458);
             this.Name = "AuthForm";
-            ((System.ComponentModel.ISupportInitialize)(this.authArchivistBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.authArchivistBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
